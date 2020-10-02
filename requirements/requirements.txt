@@ -1,0 +1,6 @@
+numpy==1.18.3
+pillow==7.1.2
+xvfbwrapper==0.2.9
+matplotlib==3.2.1
+tqdm==4.46.0
+pandas==1.0.5

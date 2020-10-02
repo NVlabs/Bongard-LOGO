@@ -1,0 +1,9 @@
+.vscode
+.idea
+bongard.egg-info
+images
+unused
+.DS_Store
+archived
+build
+dist

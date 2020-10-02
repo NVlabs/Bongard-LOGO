@@ -1,0 +1,628 @@
+shape function name	shape name	super class	set of base actions	turn angles
+equilateral_traingle	equilateral triangle	triangle	line_1.0, line_1.0, line_1.0	L0--L120.0--L120.0
+acute_equi_triangle	acute equicrural triangle	triangle	line_1.0, line_1.0, line_0.518	L0--L150.0--L105.0
+obtuse_equi_triangle	obtuse equicrural triangle	triangle	line_1.0, line_0.577, line_0.577	L0--L150.0--L60.0
+right_equi_triangle	right equicrural triangle	triangle	line_1.0, line_0.707, line_0.707	L0--L135.0--L90.0
+acute_nonequi_triangle	acute non-equicrural triangle	triangle	line_1.0, line_0.732, line_0.897	L0--L120.0--L105.0
+obtuse_nonequi_triangle	obtuse non-equicrural triangle	triangle	line_1.0, line_0.732, line_0.518	L0--L150.0--L75.0
+thin_obtuse_nonequi_triangle	thin obtuse non-equicrural triangle	triangle	line_1.0, line_0.707, line_0.366	L0--L165.0--L45.0
+right_nonequi_triangle	right non-equicrural triangle	triangle	line_1.0, line_0.5, line_0.866	L0--L120.0--L90.0
+sector30	sector30	sector	line_0.5, line_0.5, arc_0.5_30.0	L0--L150.0--L90.0
+inverse_sector30	inverse sector30	sector	line_0.5, line_0.5, arc_0.5_30.0	L0--R150.0--R120.0
+sector90	sector90	sector	line_0.5, line_0.5, arc_0.5_90.0	L0--L90.0--L90.0
+inverse_sector90	inverse sector90	sector	line_0.5, line_0.5, arc_0.5_90.0	L0--R90.0--R180.0
+sector180	sector180	sector	line_1.0, arc_0.5_180.0	L0--L90.0
+sector270	sector270	sector	line_0.5, line_0.5, arc_0.5_270.0	L0--R90.0--L90.0
+inverse_sector270	inverse sector270	sector	line_0.5, line_0.5, arc_0.5_270.0	L0--L90.0--L0.0
+sector330	sector330	sector	line_0.5, line_0.5, arc_0.5_330.0	L0--R150.0--L90.0
+inverse_sector330	inverse sector330	sector	line_0.5, line_0.5, arc_0.5_330.0	L0--L150.0--R60.0
+quasi_sector73	quasi-sector73	sector	line_0.922, line_0.608, arc_0.5_73.74	L0--L140.064--L43.668
+inverse_quasi_sector73	inverse quasi-sector73	sector	line_0.922, line_0.608, arc_0.5_73.74	L0--R140.064--R117.408
+quasi_sector90	quasi-sector90	sector	line_0.657, line_0.252, arc_0.5_90.0	L0--L89.843--L66.407
+inverse_quasi_sector90	inverse quasi-sector90	sector	line_0.67, line_0.22, arc_0.5_90.0	L0--R90.451--R152.45
+quasi_sector270	quasi-sector270	sector	line_0.224, line_0.671, arc_0.5_270.0	L0--R90.0--L63.435
+quasi_inverse_sector270	inverse quasi-sector270	sector	line_0.244, line_0.671, arc_0.5_270.0	L0--L90.0--L26.565
+quasi_sector330	quasi-sector330	sector	line_0.439, line_0.583, arc_0.5_330.0	L0--R156.246--L59.036
+quasi_inverse_sector330	inverse quasi-sector330	sector	line_0.445, line_0.583, arc_0.5_330.0	L0--L155.921--R30.964
+open_semi_circle	open semi-circle	arc	arc_0.5_180.0	L0
+open_onequarter_circle	open 1/4-circle	arc	arc_0.5_90.0	L0
+open_threequarter_circle	open 3/4-circle	arc	arc_0.5_270.0	L0
+closed_semi_circle	closed semi-circle	arc	arc_0.5_180.0, line_1.0	L0--L90.0
+closed_onequarter_circle	closed 1/4-circle	arc	arc_0.5_90.0, line_0.707	L0--L135.0
+closed_threequarter_circle	closed 3/4-circle	arc	arc_0.5_270.0, line_0.707	L0--L45.0
+closed_circle	circle	arc	arc_0.5_360.0	L0
+crescent_moon	crescent moon	arc	arc_0.5_210.0, arc_0.5_-150.0	L0--R30.0
+almost_full_moon	almost full moon	arc	arc_0.5_270.0, arc_0.5_-90.0	L0--R90.0
+small_intersect_circle	small linersection of two circles	arc	arc_0.5_90.0, arc_0.5_90.0	L0--L90.0
+large_intersect_circle	large linersection of two circles	arc	arc_0.5_150.0, arc_0.5_150.0	L0--L30.0
+small_union_circle	small union of two circles	arc	arc_0.5_210.0, arc_0.5_210.0	L0--R30.0
+large_union_circle	large union of two circles	arc	arc_0.5_270.0, arc_0.5_270.0	L0--R90.0
+square	square	quadrangle	line_1.0, line_1.0, line_1.0, line_1.0	L0--L90.0--L90.0--L90.0
+rectangle	rectangle	quadrangle	line_1.0, line_0.6, line_1.0, line_0.6	L0--L90.0--L90.0--L90.0
+thin_rectangle	thin rectangle	quadrangle	line_1.0, line_0.2, line_1.0, line_0.2	L0--L90.0--L90.0--L90.0
+square_parallelogram30	square parallelogram30	quadrangle	line_0.6, line_0.6, line_0.6, line_0.6	L0--L30.0--L150.0--L30.0
+square_parallelogram60	square parallelogram60	quadrangle	line_0.8, line_0.8, line_0.8, line_0.8	L0--L60.0--L120.0--L60.0
+rect_parallelogram30	rectangle parallelogram30	quadrangle	line_0.8, line_0.5, line_0.8, line_0.5	L0--L30.0--L150.0--L30.0
+rect_parallelogram60	rectangle parallelogram60	quadrangle	line_0.8, line_0.5, line_0.8, line_0.5	L0--L60.0--L120.0--L60.0
+thin_rect_parallelogram30	thin rectangle parallelogram30	quadrangle	line_1.0, line_0.2, line_1.0, line_0.2	L0--L30.0--L150.0--L30.0
+thin_rect_parallelogram60	thin rectangle parallelogram60	quadrangle	line_1.0, line_0.2, line_1.0, line_0.2	L0--L60.0--L120.0--L60.0
+isosceles_trapezoid	isosceles trapezoid	quadrangle	line_1.0, line_0.536, line_0.464, line_0.536	L0--L120.0--L60.0--L60.0
+thin_isosceles_trapezoid	thin isosceles trapezoid	quadrangle	line_1.0, line_0.283, line_0.6, line_0.283	L0--L135.0--L45.0--L45.0
+right_trapezoid	right trapezoid	quadrangle	line_1.0, line_0.707, line_0.5, line_0.5	L0--L135.0--L45.0--L90.0
+thin_right_trapezoid	thin right trapezoid	quadrangle	line_1.0, line_0.295, line_0.792, line_0.208	L0--L135.0--L45.0--L90.0
+acute_nonisosc_trapezoid	acute non-isosceles trapezoid	quadrangle	line_1.0, line_0.387, line_0.553, line_0.223	L0--L150.0--L30.0--L60.0
+obtuse_nonisosc_trapezoid	obtuse non-isosceles trapezoid	quadrangle	line_1.0, line_0.5, line_0.5, line_0.866	L0--L60.0--L120.0--L30.0
+symmetric_dagger	symmetric dagger	quadrangle	line_0.563, line_0.563, line_1.0, line_1.0	L0--R61.93--L150.02--L121.89
+inverse_symm_dagger	inverse symmetric dagger	quadrangle	line_0.563, line_0.563, line_1.0, line_1.0	L0--L61.93--L88.09--L121.89
+thin_symm_dagger	thin symmetric dagger	quadrangle	line_0.32, line_0.32, line_0.91, line_0.91	L0--R143.13--L167.91--L167.32
+thin_inverse_symm_dagger	thin inverse symmetric dagger	quadrangle	line_0.32, line_0.32, line_0.91, line_0.91	L0--L143.13--L24.78--L167.32
+asymmetric_dagger	asymmetric dagger	quadrangle	line_0.408, line_0.738, line_1.0, line_1.0	L0--R68.2--L142.25--L121.89
+inverse_asymm_dagger	inverse asymmetric dagger	quadrangle	line_0.408, line_0.738, line_1.0, line_1.0	L0--L68.2--L95.86--L121.89
+half_dagger	half dagger	quadrangle	line_0.32, line_0.563, line_1.0, line_0.66	L0--R30.33--L150.02--L121.88
+thin_half_dagger	thin half dagger	quadrangle	line_0.07, line_0.32, line_0.91, line_0.6	L0--R71.16--L167.91--L167.25
+irregular_quadrangle	irregular quadrangle	quadrangle	line_0.63, line_0.45, line_0.99, line_0.76	L0--L45.0--L108.43--L111.8
+square_funnel	square funnel	quadrangle*	line_0.99, line_0.7, line_0.99, line_0.7	L0--R135.0--R135.0--L135.0
+rect_funnel	rectangle funnel	quadrangle*	line_0.94, line_0.5, line_0.94, line_0.5	L0--R122.01--R122.01--L122.01
+thin_rect_funnel	thin rectangle funnel	quadrangle*	line_1.0, line_0.196, line_1.0, line_0.196	L0--R101.31--R101.31--L101.31
+symm_parallel_funnel	symmetric parallelogram funnel	quadrangle*	line_0.86, line_0.3, line_0.86, line_0.7	L0--R125.54--R125.54--L125.54
+asymm_parallel_funnel	asymmetric parallelogram funnel	quadrangle*	line_0.76, line_0.3, line_0.99, line_0.7	L0--R113.2--R135.0--L135.0
+symmetric_bat	symmetric bat	quadrangle*	line_1.0, line_0.63, line_1.0, line_0.63	L0--R108.43--R145.3--L108.43
+thin_symm_bat	thin symmetric bat	quadrangle*	line_1.0, line_0.89, line_1.0, line_0.89	L0--R116.57--R169.7--L116.57
+asymmetric_bat	asymmetric bat	quadrangle*	line_0.98, line_0.41, line_1.0, line_0.89	L0--R99.93--R157.17--L116.57
+flat_symm_bat	flat symmetric bat	quadrangle*	line_0.82, line_0.28, line_0.82, line_0.28	L0--R59.04--R149.04--L59.04
+regular_pentagon	regular pentagon	pentagon	line_0.62, line_0.62, line_0.62, line_0.62, line_0.62	L0--L72.0--L72.0--L72.0--L72.0
+inverse_regular_pentagon	inverse regular pentagon	pentagon	line_0.62, line_0.62, line_0.62, line_0.62, line_0.62	L0--L72.0--L144.0--R72.0--L144.0
+symmetric_house	symmetric house	pentagon	line_1.0, line_0.6, line_0.64, line_0.64, line_0.6	L0--L90.0--L51.34--L77.32--L51.34
+inverse_symmetric_house	inverse symmetric house	pentagon	line_1.0, line_0.6, line_0.64, line_0.64, line_0.6	L0--L90.0--L128.66--R77.32--L128.66
+asymmetric_house	asymmetric house	pentagon	line_1.0, line_0.6, line_0.5, line_0.81, line_0.6	L0--L90.0--L36.87--L82.87--L60.26
+inverse_asymmetric_house	inverse asymmetric house	pentagon	line_1.0, line_0.6, line_0.5, line_0.81, line_0.6	L0--L90.0--L143.13--R82.87--L119.74
+symmetric_moth	symmetric moth	pentagon	line_1.0, line_0.63, line_0.36, line_0.36, line_0.63	L0--L108.43--L37.87--L67.38--L37.87
+inverse_symmetric_moth	inverse symmetric moth	pentagon	line_1.0, line_0.63, line_0.36, line_0.36, line_0.63	L0--L108.43--L105.26--R67.38--L105.26
+asymmetric_moth	asymmetric moth	pentagon	line_1.0, line_0.63, line_0.28, line_0.45, line_0.63	L0--L108.43--L26.57--L71.57--L45.0
+inverse_asymmetric_moth	inverse asymmetric moth	pentagon	line_1.0, line_0.63, line_0.28, line_0.45, line_0.63	L0--L108.43--L116.57--R71.57--L98.13
+symmetric_frog	symmetric frog	pentagon	line_1.0, line_0.36, line_0.82, line_0.82, line_0.36	L0--L146.31--R42.27--L151.93--R42.27
+inverse_symmetric_frog	inverse symmetric frog	pentagon*	line_1.0, line_0.36, line_0.82, line_0.82, line_0.36	L0--L146.31--L109.65--R151.93--L109.65
+asymmetric_frog	asymmetric frog	pentagon	line_1.0, line_0.36, line_0.8, line_0.89, line_0.36	L0--L146.31--R56.31--L153.43--R29.74
+inverse_asymmetric_frog	inverse asymmetric frog	pentagon*	line_1.0, line_0.36, line_0.8, line_0.89, line_0.36	L0--L146.31--L123.69--R153.43--L97.13
+symmetric_fish	symmetric fish	pentagon*	line_0.36, line_0.36, line_0.85, line_0.2, line_0.85	L0--L112.62--L54.25--R110.56--R110.56
+inverse_symmetric_fish	inverse symmetric fish	pentagon*	line_0.361, line_0.361, line_0.854, line_0.2, line_0.854	L0--R112.62--L166.866--R110.556--R110.556
+asymmetric_fish	asymmetric fish	pentagon*	line_0.36, line_0.22, line_0.85, line_0.2, line_0.85	L0--L97.13--L47.12--R110.56--R110.56
+inverse_asymmetric_fish	inverse asymmetric fish	pentagon*	line_0.316, line_0.141, line_0.854, line_0.2, line_0.854	L0--R63.435--L155.556--R110.56--R110.56
+balanced_fish	balanced_fish	pentagon*	line_0.36, line_0.36, line_0.86, line_0.6, line_0.86	L0--L112.62--L69.23--R125.54--R125.54
+two_equilateral_triangles	two equilateral triangles	pentagon*	line_1.0, line_0.5, line_0.5, line_0.5, line_0.5	L0--L120.0--L120.0--R120.0--L120.0
+two_same_right_triangles	two same right triangles	pentagon*	line_1.0, line_0.5, line_0.707, line_0.5, line_0.707	L0--L90.0--L135.0--R135.0--L135.0
+two_mirror_right_triangles	two mirror right triangles	pentagon*	line_1.0, line_0.5, line_0.707, line_0.707, line_0.5	L0--L90.0--L135.0--R90.0--L135.0
+two_updown_right_triangles	two updown right triangles	pentagon*	line_1.0, line_0.5, line_0.707, line_0.5, line_0.707	L0--L90.0--L135.0--L45.0--R135.0
+right_equilateral_triangles	right equilateral triangles	pentagon*	line_1.0, line_0.5, line_0.707, line_0.5, line_0.5	L0--L90.0--L135.0--R105.0--L120.0
+two_unbalanced_triangles	two unbalanced triangles	pentagon*	line_1.0, line_0.8, line_0.943, line_0.224, line_0.316	L0--L90.0--L147.995--R84.56--L45.0
+two_mirror_unbala_triangles	two mirror unbalanced triangles	pentagon*	line_1.0, line_0.8, line_0.943, line_0.224, line_0.316	L0--L90.0--L147.995--R31.43--R45.0
+two_same_obtuse_triangles	two same obtuse triangles	pentagon*	line_1.0, line_0.424, line_0.854, line_0.424, line_0.854	L0--L45.0--L155.556--R155.556--L155.556
+two_mirror_obtuse_triangles	two mirror obtuse triangles	pentagon*	line_1.0, line_0.424, line_0.854, line_0.854, line_0.424	L0--L45.0--L155.556--R41.112--L155.556
+two_updown_obtuse_triangles	two updown obtuse triangles	pentagon*	line_1.0, line_0.424, line_0.854, line_0.424, line_0.854	L0--L45.0--L155.556--L114.444--R155.556
+big_small_equil_triangles	big and small equilateral triangles	pentagon*	line_1.0, line_0.2, line_0.2, line_0.8, line_0.8	L0--L120.0--L120.0--R120.0--L120.0
+big_small_right_triangles	big and small right triangles	pentagon*	line_0.9, line_0.2, line_0.283, line_0.7, line_0.99	L0--L90.0--L135.0--R135.0--L135.0
+big_small_obtuse_triangles	big and small obtuse triangles	pentagon*	line_0.791, line_0.111, line_0.25, line_0.447, line_1.0	L0--L45.0--L153.435--R153.435--L153.435
+regular_hexagon	regular hexagon	hexagon	line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L60.0--L60.0--L60.0--L60.0--L60.0
+right_hexagon	right hexagon	hexagon	line_1.0, line_0.6, line_0.424, line_0.4, line_0.424, line_0.6	L0--L90.0--L45.0--L45.0--L45.0--L45.0
+inverse_right_hexagon	inverse right hexagon	hexagon	line_1.0, line_0.6, line_0.424, line_0.4, line_0.424, line_0.6	L0--L90.0--L135.0--R45.0--R45.0--L135.0
+inverse_obtuse_hexagon	inverse obtuse hexagon	hexagon	line_0.6, line_0.632, line_0.424, line_0.4, line_0.424, line_0.632	L0--L71.565--L153.435--R45.0--R45.0--L153.435
+acute_hexagon	acute hexagon	hexagon	line_1.0, line_0.632, line_0.283, line_0.2, line_0.283, line_0.632	L0--L108.435--L26.565--L45.0--L45.0--L26.565
+inverse_acute_hexagon	inverse acute hexagon	hexagon	line_1.0, line_0.632, line_0.283, line_0.2, line_0.283, line_0.632	L0--L108.435--L116.565--R45.0--R45.0--L116.565
+square_acute_hexagon	square acute hexagon	hexagon	line_1.0, line_0.671, line_0.4, line_0.4, line_0.4, line_0.671	L0--L116.565--R26.565--L90.0--L90.0--R26.565
+inverse_square_acute_hexagon	inverse square acute hexagon	hexagon	line_1.0, line_0.671, line_0.4, line_0.4, line_0.4, line_0.671	L0--L116.565--L153.435--R90.0--R90.0--L153.435
+rect_acute_hexagon	rectangle acute hexagon	hexagon	line_1.0, line_0.671, line_0.2, line_0.4, line_0.2, line_0.671	L0--L116.565--R26.565--L90.0--L90.0--R26.565
+inverse_rect_acute_hexagon	inverse rectangle acute hexagon	hexagon	line_1.0, line_0.671, line_0.2, line_0.4, line_0.2, line_0.671	L0--L116.565--L153.435--R90.0--R90.0--L153.435
+trapez_acute_hexagon	trapezoid acute hexagon	hexagon	line_1.0, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--R26.565--L116.565--L63.435--R26.565
+inverse_trapez_acute_hexagon	inverse trapezoid acute hexagon	hexagon	line_1.0, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--L153.435--R116.565--R63.435--L153.435
+triangle_acute_hexagon	triangle acute hexagon	hexagon	line_1.0, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--R26.565--L153.435--R63.435--L63.435
+inverse_triangle_acute_hexagon	inverse triangle acute hexagon	hexagon	line_1.0, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--L153.435--R153.435--L63.435--L63.435
+square_parallelogram	square parallelogram	hexagon	line_0.4, line_0.671, line_0.4, line_0.4, line_0.4, line_0.671	L0--L116.565--R26.565--L90.0--L90.0--L26.565
+inverse_square_parallel	inverse square parallelogram	hexagon*	line_0.4, line_0.671, line_0.4, line_0.4, line_0.4, line_0.671	L0--L116.565--L153.435--R90.0--R90.0--R153.435
+rect_parallelogram	rectangle parallelogram	hexagon	line_0.4, line_0.671, line_0.2, line_0.4, line_0.2, line_0.671	L0--L116.565--R26.565--L90.0--L90.0--L26.565
+inverse_rect_parallel	inverse rectangle parallelogram	hexagon*	line_0.4, line_0.671, line_0.2, line_0.4, line_0.2, line_0.671	L0--L116.565--L153.435--R90.0--R90.0--R153.435
+trapez_parallelogram	trapezoid parallelogram	hexagon	line_0.4, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--R26.565--L116.565--L63.435--L26.565
+inverse_trapez_parallel	inverse trapezoid parallelogram	hexagon*	line_0.4, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--L153.435--R116.565--R63.435--R153.435
+triangle_parallelogram	triangle parallelogram	hexagon	line_0.4, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--R26.565--L153.435--R63.435--L116.565
+inverse_triangle_parallel	inverse triangle parallelogram	hexagon	line_0.4, line_0.671, line_0.4, line_0.447, line_0.2, line_0.671	L0--L116.565--L153.435--R153.435--L63.435--L116.565
+symmetric_arrow	symmetric arrow	hexagon	line_1.0, line_0.583, line_0.583, line_1.0, line_0.583, line_0.583	L0--L59.036--L61.928--L59.036--L120.964--R61.928
+asymmetric_arrow	asymmetric arrow	hexagon	line_1.0, line_0.361, line_0.854, line_1.0, line_0.854, line_0.361	L0--L33.69--L76.866--L69.444--L110.556--R76.866
+thin_symmetric_arrow	thin symmetric arrow	hexagon	line_1.0, line_0.316, line_0.316, line_1.0, line_0.316, line_0.316	L0--L18.435--L143.13--L18.435--L161.565--R143.13
+thin_asymmetric_arrow	thin asymmetric arrow	hexagon	line_1.0, line_0.5, line_0.361, line_1.0, line_0.316, line_0.316	L0--L53.13--L160.56--R33.69--L161.565--R143.13
+thin_symmetric_boat	thin symmetric boat	hexagon	line_1.0, line_0.5, line_0.361, line_1.0, line_0.361, line_0.5	L0--L53.13--L160.56--R33.69--R33.69--L160.56
+symmetric_cup	symmetric cup	hexagon	line_1.0, line_0.5, line_0.5, line_1.0, line_0.5, line_0.5	L0--L126.87--R73.74--L126.87--L126.87--R73.74
+asymmetric_cup	asymmetric cup	hexagon	line_1.0, line_0.781, line_0.539, line_1.0, line_0.5, line_0.5	L0--L129.806--R108.004--L158.199--L126.87--R73.74
+unbalanced_symm_cup	unbalanced symmetric cup	hexagon	line_1.0, line_0.806, line_0.412, line_1.0, line_0.412, line_0.806	L0--L119.745--R105.709--L165.964--L165.964--R105.709
+thin_symmetric_cup	thin symmetric cup	hexagon	line_1.0, line_0.316, line_0.316, line_1.0, line_0.316, line_0.316	L0--L161.565--R143.13--L161.565--L161.565--R143.13
+thin_unbalanced_symm_cup	thin unbalanced asymmetric cup	hexagon	line_1.0, line_0.608, line_0.608, line_1.0, line_0.224, line_0.224	L0--L170.538--R161.075--L170.538--L153.435--R126.87
+thin_z	thin z	hexagon	line_0.632, line_0.361, line_0.447, line_0.632, line_0.361, line_0.447	L0--L127.875--R119.745--L171.87--L127.875--R119.745
+square_right_triangle	square right_triangle	hexagon*	line_1.0, line_0.5, line_0.707, line_0.5, line_0.5, line_0.5	L0--L90.0--L135.0--R135.0--L90.0--L90.0
+square_down_right_triangle	square down right_triangle	hexagon*	line_1.0, line_0.5, line_0.707, line_0.5, line_0.5, line_0.5	L0--R90.0--R135.0--R45.0--L90.0--L90.0
+thin_rec_right_triangle	thin rectangle right_triangle	hexagon*	line_1.0, line_0.153, line_0.415, line_0.153, line_0.615, line_0.153	L0--L90.0--L111.801--R111.801--L90.0--L90.0
+thin_rec_down_right_triangle	thin rectangle down right_triangle	hexagon*	line_1.0, line_0.153, line_0.415, line_0.153, line_0.615, line_0.153	L0--R90.0--R111.801--R68.199--L90.0--L90.0
+unbala_trapezoid_right_triangle	unbalanced trapezoid right_triangle	hexagon*	line_1.0, line_0.283, line_0.2, line_0.583, line_0.5, line_0.5	L0--L135.0--L135.0--R149.036--L59.036--L90.0
+unbala_trapez_down_right_triangle	unbalanced trapezoid down right_triangle	hexagon*	line_1.0, line_0.283, line_0.2, line_0.583, line_0.5, line_0.5	L0--R135.0--R135.0--L30.964--L59.036--L90.0
+unbala_dagger_triangle	unbalanced dagger triangle	hexagon*	line_1.0, line_0.224, line_0.224, line_0.849, line_0.4, line_0.283	L0--L116.565--L126.87--R108.435--L135.0--R45.0
+two_symm_bala_quadrangles	two symmetric quadrangles	hexagon*	line_0.922, line_0.424, line_0.424, line_0.922, line_0.424, line_0.424	L0--R85.601--R90.0--R85.601--L85.601--L90.0
+two_symm_unbala_quadrangles	two symm_unbala quadrangles	hexagon*	line_0.894, line_0.224, line_0.224, line_0.894, line_0.424, line_0.424	L0--R53.13--R126.87--R53.13--L71.565--L90.0
+two_asymm_bala_quadrangles	two asymm_bala quadrangles	hexagon*	line_1.0, line_0.399, line_0.399, line_0.758, line_0.399, line_0.399	L0--R93.814--R90.0--R74.745--L74.745--L90.0
+two_asymm_unbala_quadrangles	two asymm_unbala quadrangles	hexagon*	line_1.0, line_0.224, line_0.316, line_0.728, line_0.424, line_0.424	L0--R63.435--R135.0--R34.38--L60.945--L90.0
+thin_symm_quagrangles	thin symm_quagrangles	hexagon*	line_0.728, line_0.316, line_0.316, line_0.728, line_0.316, line_0.316	L0--R34.38--R143.13--R34.38--L34.38--L143.13
+thin_asymm_quagrangles	thin asymm_quagrangles	hexagon*	line_0.728, line_0.361, line_0.539, line_0.728, line_0.316, line_0.316	L0--L40.365--R168.111--R84.144--L34.38--L143.13
+symmetric_goldfish	symmetric goldfish	hexagon*	line_0.922, line_0.361, line_0.361, line_0.922, line_0.424, line_0.424	L0--R164.291--L67.38--R164.291--L85.601--L90.0
+asymmetric_goldfish	asymmetric goldfish	hexagon*	line_0.922, line_0.361, line_0.361, line_0.762, line_0.3, line_0.424	L0--R164.291--L67.38--R146.889--L23.199--L135.0
+symm_unbala_goldfish	symmmetric unbalanced goldfish	hexagon*	line_0.894, line_0.316, line_0.316, line_0.894, line_0.224, line_0.224	L0--R135.0--L36.87--R135.0--L53.13--L126.87
+asymm_unbala_goldfish	asymmmetric unbalanced goldfish	hexagon*	line_1.0, line_0.51, line_0.224, line_0.854, line_0.224, line_0.224	L0--R138.18--L37.875--R137.121--L47.121--L126.87
+thin_symmetric_goldfish	thin symmetric goldfish	hexagon*	line_0.728, line_0.141, line_0.141, line_0.728, line_0.316, line_0.316	L0--R150.945--L90.0--R150.945--L34.38--L143.13
+regular_x	regular x	hexagon*	line_1.0, line_0.316, line_0.316, line_1.0, line_0.316, line_0.316	L0--R145.305--L36.87--R145.305--L145.305--R36.87
+pointy_regular_x	pointy regular x	hexagon*	line_1.0, line_0.364, line_0.364, line_1.0, line_0.364, line_0.364	L0--R165.984--L90.0--R165.984--L165.984--R90.0
+symmetric_bala_x	symmetric balanced x	hexagon*	line_1.0, line_0.361, line_0.361, line_1.0, line_0.316, line_0.316	L0--R160.56--L67.38--R160.56--L145.305--R36.87
+symmetric_unbala_x	symmetric unbalanced x	hexagon*	line_1.0, line_0.427, line_0.427, line_1.0, line_0.224, line_0.224	L0--R147.591--L41.395--R147.591--L153.435--R53.13
+asymmetric_unbala_x	asymmetric unbalanced x	hexagon*	line_1.0, line_0.608, line_0.224, line_1.0, line_0.224, line_0.224	L0--R136.332--L36.027--R153.435--L153.435--R53.13
+transposed_x	transposed x	hexagon*	line_1.0, line_0.361, line_0.3, line_0.721, line_0.3, line_0.361	L0--R160.56--L33.69--R146.31--L146.31--R33.69
+thin_transposed_x	thin transposed x	hexagon*	line_1.0, line_0.424, line_0.141, line_0.447, line_0.141, line_0.424	L0--R171.87--L90.0--R161.565--L161.565--R90.0
+thin_irregular_x	thin irregular x	hexagon*	line_0.809, line_0.138, line_0.31, line_1.0, line_0.31, line_0.31	L0--R149.036--L116.565--R172.875--L172.875--R143.13
+regular_heptagon	regular heptagon	heptagon	line_0.4, line_0.4, line_0.4, line_0.4, line_0.4, line_0.4, line_0.4	L0--L51.429--L51.429--L51.429--L51.429--L51.429--L51.429
+symmetric_mouth	symmetric mouth	heptagon	line_0.5, line_0.424, line_0.5, line_0.361, line_0.7, line_0.7, line_0.361	L0--L45.0--L45.0--L56.31--L123.69--R90.0--L123.69
+asymmetric_mouth	asymmetric mouth	heptagon	line_0.5, line_0.424, line_0.5, line_0.361, line_0.922, line_0.539, line_0.361	L0--L45.0--L45.0--L56.31--L111.61--R99.273--L145.491
+irregular_heptagon	irregular heptagon	heptagon	line_0.8, line_0.4, line_0.447, line_0.447, line_0.5, line_0.4, line_0.361	L0--L90.0--L26.565--L36.87--L63.435--L53.13--L33.69
+right_nose	right nose	heptagon	line_0.539, line_0.3, line_0.64, line_0.5, line_0.3, line_0.583, line_0.5	L0--L111.801--R51.34--L141.34--R90.0--L120.964--L59.036
+symmetric_nose	symmetric nose	heptagon	line_0.4, line_0.316, line_0.539, line_0.539, line_0.316, line_0.4, line_1.0	L0--L71.565--R49.764--L136.397--R49.764--L71.565--L90.0
+asymmetric_nose	asymmetric nose	heptagon	line_0.4, line_0.3, line_0.539, line_0.5, line_0.5, line_0.64, line_0.5	L0--L90.0--R68.199--L158.199--R90.0--L141.34--L38.66
+symmetric_crown	symmetric crown	heptagon	line_1.0, line_0.583, line_0.539, line_0.539, line_0.583, line_1.0, line_1.0	L0--L149.036--R127.235--L136.397--R127.235--L149.036--L90.0
+asymmetric_crown	asymmetric crown	heptagon	line_0.6, line_0.583, line_0.539, line_0.539, line_0.583, line_0.922, line_0.854	L0--L149.036--R127.235--L136.397--R127.235--L161.565--L98.027
+symmetric_clamp	symmetric clamp	heptagon	line_0.922, line_0.316, line_0.316, line_0.922, line_0.447, line_0.2, line_0.447	L0--L149.036--R143.13--L149.036--L165.964--R63.435--R63.435
+asymmetric_clamp	asymmetric clamp	heptagon	line_0.949, line_0.3, line_0.361, line_0.906, line_0.447, line_0.1, line_0.5	L0--L161.565--R146.31--L139.97--L159.775--R63.435--R53.13
+irregular_octagon	irregular octagon	octagon	line_0.3, line_0.361, line_0.361, line_0.3, line_0.2, line_0.361, line_0.539, line_0.447	L0--R33.69--L90.0--L33.69--L90.0--L33.69--R55.491--L138.366
+regular_lamp	regular lamp	octagon	line_0.361, line_0.6, line_0.361, line_0.9, line_0.361, line_0.6, line_0.361, line_0.9	L0--R56.31--R56.31--L146.31--L146.31--R56.31--R56.31--L146.31
+symmetric_lamp	symmetric lamp	octagon	line_0.361, line_0.6, line_0.447, line_1.0, line_0.447, line_0.6, line_0.361, line_0.6	L0--R33.69--R63.435--L153.435--L153.435--R63.435--R33.69--L123.69
+transposed_lamp	transposed lamp	octagon	line_0.361, line_0.6, line_0.412, line_0.825, line_0.361, line_0.6, line_0.412, line_0.825	L0--R33.69--R75.964--L151.928--L137.726--R33.69--R75.964--L151.928
+asymmetric_lamp	asymmetric lamp	octagon	line_0.361, line_0.5, line_0.316, line_0.424, line_0.447, line_0.5, line_0.412, line_0.825	L0--R33.69--R71.565--L116.565--L108.435--L26.565--R75.964--L151.928
+thin_regular_lamp	thin regular lamp	octagon	line_0.141, line_0.8, line_0.141, line_0.3, line_0.141, line_0.8, line_0.141, line_0.3	L0--R45.0--R45.0--L135.0--L135.0--R45.0--R45.0--L135.0
+unbala_regular_lamp	unbalanced regular lamp	octagon	line_0.224, line_0.3, line_0.721, line_1.0, line_0.721, line_0.3, line_0.224, line_0.6	L0--R63.435--R33.69--L123.69--L123.69--R33.69--R63.435--L153.435
+unbala_asymm_lamp	unbalanced asymmetric lamp	octagon	line_0.22, line_0.294, line_0.707, line_1.0, line_0.555, line_0.294, line_0.22, line_0.588	L0--R63.435--R33.69--L135.0--L123.69--R45.0--R63.435--L153.435
+rec_symm_arc180	rectangle symm arc180	quasi_sector	line_0.4, line_1.0, line_0.4, arc_0.5_180.0	L0--L90.0--L90.0--L0.0
+inverse_rec_symm_arc180	inverse rectangle symm arc180	quasi_sector	line_0.4, line_1.0, line_0.4, arc_0.5_180.0	L0--R90.0--R90.0--L180.0
+right_trap_arc180	right trapezoid arc180	quasi_sector	line_0.707, line_0.5, line_0.5, arc_0.5_180.0	L0--L45.0--L90.0--L0.0
+inverse_right_trap_arc180	inverse right trapezoid arc180	quasi_sector	line_0.4, line_0.5, line_0.64, arc_0.5_180.0	L0--R90.0--R38.66--L128.66
+parallel_arc180	parallelogram arc180	quasi_sector	line_0.5, line_1.0, line_0.5, arc_0.5_180.0	L0--L53.13--L126.87--R36.87
+inverse_parallel_arc180	inverse parallelogram arc180	quasi_sector	line_0.361, line_1.0, line_0.361, arc_0.5_180.0	L0--R33.69--R146.31--R123.69
+trap_symm_arc180	trapezoid symm arc180	quasi_sector	line_0.424, line_0.4, line_0.424, arc_0.5_180.0	L0--L45.0--L45.0--L45.0
+inverse_trap_arc180	inverse trapezoid arc180	quasi_sector	line_0.361, line_0.4, line_0.361, arc_0.5_180.0	L0--R33.69--R33.69--L123.69
+dagger_arc180	dagger arc180	quasi_sector	line_0.943, line_0.316, line_0.361, arc_0.5_180.0	L0--L140.44--R74.745--L56.31
+quard_arc180	quard arc180	quasi_sector	line_0.447, line_0.608, line_0.361, arc_0.5_180.0	L0--L72.897--L46.848--L33.69
+acute_triangle_arc180	acute triangle arc180	quasi_sector	line_0.5, line_0.361, line_0.424, arc_0.5_180.0	L0--R56.31--L101.31--L45.0
+inverse_acute_triangle_arc180	inverse acute triangle arc180	quasi_sector	line_0.5, line_0.361, line_0.424, arc_0.5_180.0	L0--L56.31--R101.31--L135.0
+obtuse_triangle_arc180	obtuse triangle arc180	quasi_sector	line_0.5, line_0.361, line_0.762, arc_0.5_180.0	L0--R123.69--L146.889--L66.801
+inverse_obtuse_triangle_arc180	inverse obtuse triangle arc180	quasi_sector	line_0.5, line_0.361, line_0.762, arc_0.5_180.0	L0--L123.69--R146.889--L113.199
+two_symm_arcs	two symm arcs	quasi_sector	line_0.707, line_0.707, arc_0.5_180.0	L0--R90.0--L135.0
+sector_arc	sector arc	quasi_sector	line_0.5, line_0.5, line_0.707, arc_0.5_180.0	L0--L90.0--R135.0--L135.0
+inverse_sector_arc	inverse sector arc	quasi_sector	line_0.5, line_0.5, line_0.707, arc_0.5_180.0	L0--R90.0--R45.0--L135.0
+quasi_sector_arc	quasi sector arc	quasi_sector	line_0.566, line_0.906, line_0.707, arc_0.5_180.0	L0--L128.66--R128.66--L135.0
+inverse_quasi_sector_arc	inverse quasi sector arc	quasi_sector	line_0.608, line_0.608, line_0.707, arc_0.5_180.0	L0--R108.925--R35.538--L135.0
+zero_symm_bridge	zero symm bridge	quasi_sector	line_0.2, line_0.8, line_0.2, arc_0.5_106.26	L0--R90.0--R90.0--R143.13
+thin_symm_bridge	thin symm bridge	quasi_sector	line_0.3, line_0.8, line_0.3, arc_0.5_106.26	L0--R90.0--R90.0--R143.13
+symm_bridge	symm bridge	quasi_sector	line_0.6, line_0.8, line_0.6, arc_0.5_106.26	L0--R90.0--R90.0--R143.13
+asymm_bridge	asymm bridge	quasi_sector	line_0.3, line_0.943, line_0.8, arc_0.5_106.26	L0--R57.995--R122.005--R143.13
+symm_trap_bridge	symm trapezoid bridge	quasi_sector	line_0.316, line_1.0, line_0.316, arc_0.5_106.26	L0--R108.435--R108.435--R124.695
+asymm_trap_bridge	asymm trapezoid bridge	quasi_sector	line_0.361, line_1.0, line_0.3, arc_0.5_106.26	L0--R123.69--R90.0--R143.13
+parallel_bridge	parallelogram bridge	quasi_sector	line_0.762, line_0.8, line_0.762, arc_0.5_106.26	L0--R66.801--R113.199--R119.932
+thin_parallel_bridge	thin parallelogram bridge	quasi_sector	line_0.316, line_1.0, line_0.424, arc_0.5_106.26	L0--R71.565--R135.0--R98.13
+arc_cup	arc_cup	quasi_sector	line_1.0, arc_0.5_106.26, line_1.0, arc_0.5_106.26	L0--R143.13--R143.13--R143.13
+trans_arc_cup	transposed arc_cup	quasi_sector	line_0.985, arc_0.5_106.26, line_0.985, arc_0.5_106.26	L0--R119.168--R167.09--R119.168
+touched_arc_cup	touched arc_cup	quasi_sector	line_0.4, arc_0.5_106.26, line_0.4, arc_0.5_106.26	L0--R143.13--R143.13--R143.13
+thin_regular_arc_cup	thin regular arc_cup	quasi_sector	line_0.5, arc_0.5_106.26, line_0.5, arc_0.5_106.26	L0--R143.13--R143.13--R143.13
+thin_trans_arc_cup	thin transposed arc_cup	quasi_sector	line_0.492, arc_0.5_106.26, line_0.492, arc_0.5_106.26	L0--R119.168--R167.09--R119.168
+symm_arc_cup	symm arc_cup	quasi_sector	line_0.806, arc_0.5_73.74, line_0.806, arc_0.5_106.26	L0--R119.745--R119.745--R150.255
+irregular_arc_cup	irregular arc_cup	quasi_sector	line_0.854, arc_0.5_73.74, line_0.806, arc_0.5_106.26	L0--R106.314--R133.995--R136.005
+thin_symm_arc_cup	thin symm arc_cup	quasi_sector	line_0.364, arc_0.5_73.74, line_0.364, arc_0.5_106.26	L0--R110.925--R110.925--R159.075
+thin_irregular_arc_cup	thin irregular arc_cup	quasi_sector	line_0.403, arc_0.5_73.74, line_0.35, arc_0.5_106.26	L0--R97.125--R126.87--R143.13
+symm_trans_band	symm transposed band	quasi_sector	line_0.7, arc_0.5_-106.26, line_0.7, arc_0.5_106.26	L0--L143.13--L143.13--R143.13
+thin_symm_trans_band	thin symm transposed band	quasi_sector	line_0.1, arc_0.5_-106.26, line_0.1, arc_0.5_106.26	L0--L143.13--L143.13--R143.13
+trans_band	transposed band	quasi_sector	line_0.728, arc_0.5_-106.26, line_0.728, arc_0.5_106.26	L0--L159.075--L127.185--R127.185
+thin_trans_band	thin transposed band	quasi_sector	line_0.224, arc_0.5_-106.26, line_0.224, arc_0.5_106.26	L0--L169.695--L116.565--R116.565
+symm_band	symm band	quasi_sector	line_0.707, arc_0.5_-73.74, line_0.707, arc_0.5_106.26	L0--L135.0--L135.0--R151.26
+thin_symm_band	thin symm band	quasi_sector	line_0.224, arc_0.5_-73.74, line_0.224, arc_0.5_106.26	L0--L153.435--L153.435--R169.695
+asymm_band	asymm band	quasi_sector	line_0.762, arc_0.5_-73.74, line_0.707, arc_0.5_106.26	L0--L150.068--L118.74--R135.0
+symm_trans_turtle	symm transposed turtle	quasi_sector	line_0.5, arc_0.5_106.26, line_0.5, arc_0.5_106.26	L0--L36.87--L36.87--L36.87
+trans_turtle	transposed turtle	quasi_sector	line_0.583, arc_0.5_106.26, line_0.583, arc_0.5_106.26	L0--L5.906--L67.834--L5.906
+symm_trans_axe	symm transposed axe	quasi_sector	line_0.361, line_0.361, arc_0.5_106.26, line_0.361, line_0.361, arc_0.5_106.26	L0--R67.38--L70.56--L70.56--R67.38--L70.56
+symm_axe	symm axe	quasi_sector	line_0.361, line_0.361, arc_0.5_106.26, line_0.5, line_0.5, arc_0.5_106.26	L0--R67.38--L70.56--L90.0--R106.26--L90.0
+trans_axe	transposed axe	quasi_sector	line_0.412, line_0.64, arc_0.5_106.26, line_0.412, line_0.64, arc_0.5_106.26	L0--R114.624--L75.53--L112.834--R114.624--L75.53
+symm_trans_sharp_axe	symm transposed sharp axe	quasi_sector	line_0.364, line_0.364, arc_0.5_106.26, line_0.364, line_0.364, arc_0.5_106.26	L0--R148.109--L110.925--L110.925--R148.109--L110.925
+symm_sharp_axe	symm sharp axe	quasi_sector	line_0.461, line_0.461, arc_0.5_106.26, line_0.224, line_0.224, arc_0.5_106.26	L0--R154.942--L114.341--L100.305--R126.87--L100.305
+trans_sharp_axe	transposed sharp axe	quasi_sector	line_0.5, line_0.539, arc_0.5_106.26, line_0.5, line_0.539, arc_0.5_106.26	L0--R158.199--L105.068--L126.87--R158.199--L105.068
+inverse_symm_sharp_axe	inverse symm sharp axe	quasi_sector	line_0.316, line_0.316, arc_0.5_106.26, line_0.316, line_0.316, arc_0.5_106.26	L0--L143.13--R34.695--R34.695--L143.13--R34.695
+inverse_trans_sharp_axe	inverse trans sharp axe	quasi_sector	line_0.316, line_0.316, arc_0.5_106.26, line_0.316, line_0.316, arc_0.5_106.26	L0--R143.13--L108.435--R34.695--L143.13--R34.695
+inverse_asymm_sharp_axe	inverse asymm sharp axe	quasi_sector	line_0.412, line_0.5, arc_0.5_106.26, line_0.5, line_0.412, arc_0.5_106.26	L0--R157.166--L90.0--R16.26--L157.166--R67.166
+open_equilateral_traingle	open equilateral triangle	triangle	line_1.0, line_1.0	L0--L120.0
+open_right_equi_triangle	open right equicrural triangle	triangle	line_1.0, line_0.707	L0--L135.0
+open_square_right_triangle	open square right_triangle	hexagon*	line_1.0, line_0.5, line_0.707, line_0.5, line_0.5	L0--L90.0--L135.0--R135.0--L90.0
+open_thin_symmetric_arrow	open thin symmetric arrow	hexagon	line_1.0, line_0.316, line_0.316, line_1.0, line_0.316	L0--L18.435--L143.13--L18.435--L161.565
+open_regular_hexagon	open regular hexagon	hexagon	line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L60.0--L60.0--L60.0--L60.0
+open_rec_symm_arc180	open rectangle symm arc180	quasi_sector	line_0.4, line_1.0, line_0.4, arc_0.5_90.0	L0--L90.0--L90.0--L0.0
+open_regular_heptagon	open regular heptagon	heptagon	line_0.4, line_0.4, line_0.4, line_0.4, line_0.4, line_0.4	L0--L51.429--L51.429--L51.429--L51.429--L51.429
+open_two_equilateral_triangles	open two equilateral triangles	pentagon*	line_1.0, line_0.5, line_0.5, line_0.5	L0--L120.0--L120.0--R120.0
+open_right_trapezoid	open right trapezoid	quadrangle	line_1.0, line_0.707, line_0.5	L0--L135.0--L45.0
+open_two_asymm_bala_quadrangles	open two asymm_bala quadrangles	hexagon*	line_1.0, line_0.399, line_0.399, line_0.758, line_0.399	L0--R93.814--R90.0--R74.745--L74.745
+open_symmetric_crown	open symmetric crown	heptagon	line_1.0, line_0.583, line_0.539, line_0.539, line_0.583, line_1.0	L0--L149.036--R127.235--L136.397--R127.235--L149.036
+open_trap_symm_arc180	open trapezoid symm arc180	quasi_sector	line_0.424, line_0.4, line_0.424, arc_0.5_90.0	L0--L45.0--L45.0--L45.0
+open_two_symm_arcs	open two symm arcs	quasi_sector	line_0.707, line_0.707, arc_0.5_90.0	L0--R90.0--L135.0
+open_symm_trans_band	open symm transposed band	quasi_sector	line_0.7, arc_0.5_-106.26, line_0.7, arc_0.5_90.0	L0--L143.13--L143.13--R143.13
+open_symm_bridge	open symm bridge	quasi_sector	line_0.6, line_0.8, line_0.6, arc_0.5_60.0	L0--R90.0--R90.0--R143.13
+band_half_circles	band half circles	quasi_sector	line_0.3, arc_0.5_180.0, line_0.3, arc_0.5_180.0	L0--L0.0--L0.0--L0.0
+open_band_half_circles	open band half circles	quasi_sector	line_0.3, arc_0.5_180.0, line_0.3	L0--L0.0--L0.0
+open_line_half_circle	open line half circle	quasi_sector	line_0.6, arc_0.5_180.0	L0--L0.0
+open_s	open s	arc	arc_0.5_90.0, arc_0.5_-90.0	L0--L180.0
+open_line_s	open line s	arc	arc_0.5_90.0, line_0.3, arc_0.5_-90.0	L0--L0.0--L180.0
+open_symm_arc60	open symm arc60	arc	line_0.4, arc_0.5_60.0, line_0.4	L0--L0.0--L0.0
+open_asymm_arc60	open asymm arc60	arc	line_0.3, arc_0.5_60.0, line_0.6	L0--L0.0--L0.0
+symm_trans_arc_lamp	symm trans arc lamp	quasi_sector	line_0.283, line_0.3, line_0.283, arc_0.5_73.74, line_0.283, line_0.3, line_0.283, arc_0.5_73.74	L0--R45.0--R45.0--L98.13--L98.13--R45.0--R45.0--L98.13
+trans_arc_lamp	trans arc lamp	quasi_sector	line_0.283, line_0.447, line_0.283, arc_0.5_73.74, line_0.283, line_0.447, line_0.283, arc_0.5_73.74	L0--R108.435--L18.435--L98.13--L98.13--R108.435--L18.435--L98.13
+symm_arc_lamp	symm arc lamp	quasi_sector	line_0.283, line_0.3, line_0.283, line_0.6, line_0.283, line_0.3, line_0.283, arc_0.5_73.74	L0--R45.0--R45.0--L135.0--L135.0--R45.0--R45.0--L98.13
+asymm_arc_lamp	asymm arc lamp	quasi_sector	line_0.283, line_0.447, line_0.283, line_0.6, line_0.283, line_0.447, line_0.283, arc_0.5_73.74	L0--R108.435--L18.435--L135.0--L135.0--R108.435--L18.435--L98.13
+open_symm_trans_arc_lamp	open symm trans arc lamp	quasi_sector	line_0.283, line_0.3, line_0.283, arc_0.5_73.74, line_0.283, line_0.3, line_0.283	L0--R45.0--R45.0--L98.13--L98.13--R45.0--R45.0
+open_symm_arc_lamp	open symm arc lamp	quasi_sector	line_0.283, line_0.3, line_0.283, line_0.6, line_0.283, line_0.3, line_0.283	L0--R45.0--R45.0--L135.0--L135.0--R45.0--R45.0
+open_equil_obtuse_triangle1	open_equil_obtuse triangle	triangle	line_0.7, line_0.7	L0--L60.0
+open_equil_obtuse_triangle2	open_equil_obtuse triangle	triangle	line_0.7, line_0.7	L0--L30.0
+open_equil_right_triangle	open_equil_right triangle	triangle	line_0.8, line_0.8	L0--L90.0
+open_obtuse_triangle1	open_obtuse triangle	triangle	line_0.7, line_0.4	L0--L60.0
+open_obtuse_triangle2	open_obtuse triangle	triangle	line_0.7, line_0.4	L0--L30.0
+open_right_triangle	open_right triangle	triangle	line_0.8, line_0.4	L0--L90.0
+open_line_arc1	open_line arc1	quasi_sector	line_0.6, arc_0.5_90.0	L0--L0.0
+open_line_arc2	open_line arc2	quasi_sector	line_0.4, arc_0.5_90.0	L0--L0.0
+open_line_arc3	open_line arc3	quasi_sector	line_0.4, arc_0.5_128.0	L0--L0.0
+open_line_arc4	open_line arc4	quasi_sector	line_0.4, arc_0.5_153.0	L0--L0.0
+open_line_arc5	open_line arc5	quasi_sector	line_0.4, arc_0.5_270.0	L0--L0.0
+open_line_arc6	open_line arc6	quasi_sector	line_0.4, arc_0.5_227.0	L0--L0.0
+open_s1	open s1	arc	arc_0.5_90.0, arc_0.5_-60.0	L0--L180.0
+open_s2	open s2	arc	arc_0.5_120.0, arc_0.5_-60.0	L0--L180.0
+open_s3	open s3	arc	arc_0.5_60.0, arc_0.5_-60.0	L0--L180.0
+open_s4	open s4	arc	arc_0.5_120.0, arc_0.5_-90.0	L0--L180.0
+open_s5	open s5	arc	arc_0.5_120.0, arc_0.5_-120.0	L0--L180.0
+open_arbitrary_arc1	open arbitrary arc1	arc	arc_0.5_120.0	L0
+open_arbitrary_arc2	open arbitrary arc2	arc	arc_0.5_225.0	L0
+open_line_s1	open line s1	arc	arc_0.5_90.0, line_0.5, arc_0.5_-45.0	L0--L0.0--L180.0
+open_line_s2	open line s2	arc	arc_0.5_115.0, line_0.5, arc_0.5_-45.0	L0--L0.0--L180.0
+open_line_s3	open line s3	arc	arc_0.5_45.0, line_0.5, arc_0.5_-45.0	L0--L0.0--L180.0
+open_line_s4	open line s4	arc	arc_0.5_177.0, line_0.3, arc_0.5_-45.0	L0--L0.0--L180.0
+open_line_s5	open line s5	arc	arc_0.5_214.0, line_0.3, arc_0.5_-45.0	L0--L0.0--L180.0
+open_arc_line_arc1	open arc line arc1	arc	arc_0.5_45.0, line_0.45, arc_0.5_45.0	L0--L0.0--L0.0
+open_arc_line_arc2	open arc line arc2	arc	arc_0.5_45.0, line_0.3, arc_0.5_90.0	L0--L0.0--L0.0
+open_arc_line_arc3	open arc line arc3	arc	arc_0.5_60.0, line_0.3, arc_0.5_60.0	L0--L0.0--L0.0
+open_arc_line_arc4	open arc line arc4	arc	arc_0.5_45.0, line_0.3, arc_0.5_133.0	L0--L0.0--L0.0
+open_arc_line_arc5	open arc line arc5	arc	arc_0.5_45.0, line_0.3, arc_0.5_179.0	L0--L0.0--L0.0
+open_arc_line_arc6	open arc line arc6	arc	arc_0.5_45.0, line_0.3, arc_0.5_204.0	L0--L0.0--L0.0
+open_arc_line_arc7	open arc line arc7	arc	arc_0.5_45.0, line_0.3, arc_0.5_220.0	L0--L0.0--L0.0
+band_four_arcs	band four arcs	quasi_sector	line_0.3, arc_0.5_90.0, line_0.3, arc_0.5_90.0, line_0.3, arc_0.5_90.0, line_0.3, arc_0.5_90.0	L0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_band_four_arcs1	open band four arcs	quasi_sector	arc_0.5_90.0, line_0.3, arc_0.5_90.0, line_0.3, arc_0.5_90.0, line_0.3, arc_0.5_90.0	L0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_band_four_arcs2	open band four arcs	quasi_sector	line_0.3, arc_0.5_90.0, line_0.3, arc_0.5_90.0, line_0.3, arc_0.5_90.0, line_0.3	L0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0
+uneven_band_four_arcs	uneven band four arcs	quasi_sector	line_0.2, arc_0.5_90.0, line_0.4, arc_0.5_90.0, line_0.2, arc_0.5_90.0, line_0.4, arc_0.5_90.0	L0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_uneven_band_four_arcs1	open uneven band four arcs1	quasi_sector	line_0.2, arc_0.5_90.0, line_0.4, arc_0.5_90.0, line_0.2, arc_0.5_90.0, line_0.4	L0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_uneven_band_four_arcs2	open uneven band four arcs2	quasi_sector	arc_0.5_90.0, line_0.4, arc_0.5_90.0, line_0.2, arc_0.5_90.0, line_0.4, arc_0.5_90.0	L0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_uneven_band_four_arcs3	open uneven band four arcs3	quasi_sector	arc_0.5_90.0, line_0.2, arc_0.5_90.0, line_0.4, arc_0.5_90.0, line_0.2, arc_0.5_90.0	L0--L0.0--L0.0--L0.0--L0.0--L0.0--L0.0
+band_three_arcs1	band three arcs1	quasi_sector	arc_0.5_120.0, line_0.3, arc_0.5_120.0, line_0.3, arc_0.5_120.0, line_0.3	L0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_band_three_arcs1	open band three arcs1	quasi_sector	line_0.3, arc_0.5_120.0, line_0.3, arc_0.5_120.0, line_0.3	L0--L0.0--L0.0--L0.0--L0.0
+open_band_three_arcs2	open band three arcs2	quasi_sector	arc_0.5_120.0, line_0.3, arc_0.5_120.0, line_0.3, arc_0.5_120.0	L0--L0.0--L0.0--L0.0--L0.0
+band_three_arcs2	band three arcs2	quasi_sector	arc_0.5_120.0, line_0.2, arc_0.5_120.0, line_0.2, arc_0.5_120.0, line_0.2	L0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_band_three_arcs3	open band three arcs3	quasi_sector	line_0.2, arc_0.5_120.0, line_0.2, arc_0.5_120.0, line_0.2	L0--L0.0--L0.0--L0.0--L0.0
+open_band_three_arcs4	open band three arcs4	quasi_sector	arc_0.5_120.0, line_0.2, arc_0.5_120.0, line_0.2, arc_0.5_120.0	L0--L0.0--L0.0--L0.0--L0.0
+band_three_arcs3	band three arcs3	quasi_sector	arc_0.5_120.0, line_0.4, arc_0.5_120.0, line_0.4, arc_0.5_120.0, line_0.4	L0--L0.0--L0.0--L0.0--L0.0--L0.0
+open_band_three_arcs5	open band three arcs3	quasi_sector	line_0.4, arc_0.5_120.0, line_0.4, arc_0.5_120.0, line_0.4	L0--L0.0--L0.0--L0.0--L0.0
+open_band_three_arcs6	open band three arcs4	quasi_sector	arc_0.5_120.0, line_0.4, arc_0.5_120.0, line_0.4, arc_0.5_120.0	L0--L0.0--L0.0--L0.0--L0.0
+bala_two_intersect_circles1	balanced two intersect circles1	arc	arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_90.0	L0--R180.0--R90.0--L180.0
+bala_two_intersect_circles2	balanced two intersect circles2	arc	arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_90.0	L0--R150.0--R90.0--L150.0
+bala_two_intersect_circles3	balanced two intersect circles3	arc	arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_90.0	L0--R120.0--R90.0--L120.0
+bala_two_intersect_circles4	balanced two intersect circles4	arc	arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_90.0	L0--R90.0--R90.0--L90.0
+bala_two_intersect_circles5	balanced two intersect circles5	arc	arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0	L0--R180.0--R120.0--L180.0
+bala_two_intersect_circles6	balanced two intersect circles6	arc	arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0	L0--R150.0--R120.0--L150.0
+bala_two_intersect_circles7	balanced two intersect circles7	arc	arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0	L0--R120.0--R120.0--L120.0
+bala_two_intersect_circles8	balanced two intersect circles8	arc	arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0	L0--R90.0--R120.0--L90.0
+bala_two_intersect_circles9	balanced two intersect circles9	arc	arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0	L0--R60.0--R120.0--L60.0
+scissor	scissor	arc	arc_0.5_60.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_60.0	L0--R180.0--R120.0--L180.0
+unbala_two_intersect_circles1	unbalanced two intersect circles1	arc	arc_0.5_60.0, arc_0.5_-120.0, arc_0.5_-120.0, arc_0.5_60.0	L0--R150.0--R60.0--R150.0
+unbala_two_intersect_circles2	unbalanced two intersect circles2	arc	arc_0.5_60.0, arc_0.5_-120.0, arc_0.5_-120.0, arc_0.5_60.0	L0--R120.0--R60.0--R180.0
+unbala_two_intersect_circles3	unbalanced two intersect circles2	arc	arc_0.5_60.0, arc_0.5_-120.0, arc_0.5_-120.0, arc_0.5_60.0	L0--R60.0--R60.0--L120.0
+bala_three_intersect_circles1	balanced three intersect circles1	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_90.0, arc_0.5_90.0	L0--L90.0--R180.0--R90.0--R90.0--L90.0
+bala_three_intersect_circles2	balanced three intersect circles2	arc	arc_0.5_60.0, arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0, arc_0.5_60.0	L0--L120.0--R180.0--R120.0--R120.0--L120.0
+bala_three_intersect_circles3	balanced three intersect circles3	arc	arc_0.5_60.0, arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0, arc_0.5_60.0	L0--L120.0--R180.0--R120.0--R90.0--L120.0
+unbala_three_intersect_circles1	unbalanced three intersect circles	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0, arc_0.5_60.0	L0--L90.0--R180.0--R120.0--R90.0--L120.0
+unbala_three_intersect_circles2	unbalanced three intersect circles2	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0, arc_0.5_60.0	L0--L90.0--R180.0--R120.0--R120.0--L120.0
+unbala_three_intersect_circles3	unbalanced three intersect circles3	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0, arc_0.5_60.0	L0--L90.0--R150.0--R120.0--R120.0--L120.0
+unbala_three_intersect_circles4	unbalanced three intersect circles4	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_60.0, arc_0.5_60.0	L0--L90.0--R180.0--R90.0--R90.0--L120.0
+unbala_three_intersect_circles5	unbalanced three intersect circles5	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_60.0, arc_0.5_60.0	L0--L90.0--R180.0--R90.0--R75.0--L120.0
+bala_four_intersect_circles1	balanced four intersect circles1	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0	L0--L90.0--R180.0--R90.0--R90.0--L90.0--R180.0--R90.0
+bala_four_intersect_circles2	balanced four intersect circles2	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-60.0, arc_0.5_-60.0	L0--L90.0--R180.0--R90.0--R90.0--L90.0--R180.0--R120.0
+bala_four_intersect_circles3	balanced four intersect circles3	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-90.0, arc_0.5_-90.0, arc_0.5_60.0, arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0	L0--L90.0--R180.0--R90.0--R90.0--L120.0--R180.0--R120.0
+bala_four_intersect_circles4	balanced four intersect circles4	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0, arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0	L0--L90.0--R180.0--R120.0--R90.0--L120.0--R180.0--R120.0
+bala_four_intersect_circles5	balanced four intersect circles5	arc	arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_90.0, arc_0.5_90.0, arc_0.5_-60.0, arc_0.5_-60.0	L0--L90.0--R180.0--R120.0--R120.0--L90.0--R180.0--R120.0
+bala_four_intersect_circles6	balanced four intersect circles6	arc	arc_0.5_60.0, arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0, arc_0.5_60.0, arc_0.5_60.0, arc_0.5_-60.0, arc_0.5_-60.0	L0--L120.0--R180.0--R120.0--R120.0--L120.0--R180.0--R120.0
+bird1	bird1	arc	arc_0.5_120.0, arc_0.5_120.0	L0--R120.0
+bird2	bird2	arc	arc_0.5_120.0, arc_0.5_120.0	L0--R150.0
+bird3	bird3	arc	arc_0.5_120.0, arc_0.5_180.0	L0--R150.0
+bird4	bird4	arc	arc_0.5_120.0, arc_0.5_180.0	L0--R60.0
+bird5	bird4	arc	arc_0.5_120.0, arc_0.5_-120.0	L0--L60.0
+bird6	bird4	arc	arc_0.5_120.0, arc_0.5_-159.0	L0--L60.0
+bird7	bird4	arc	arc_0.5_120.0, arc_0.5_-120.0	L0--L131.0
+bird8	bird4	arc	arc_0.5_120.0, arc_0.5_-159.0	L0--L131.0
+two_mismatch_sectors1	two_mismatch sectors1	sector	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, arc_0.5_90.0, line_0.5	L0--L90.0--L90.0--R30.0--L90.0--L90.0
+two_mismatch_sectors2	two_mismatch sectors2	sector	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, arc_0.5_90.0, line_0.5	L0--L90.0--L90.0--R60.0--L90.0--L90.0
+two_mismatch_sectors3	two_mismatch sectors3	sector	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5	L0--L90.0--L90.0--R30.0--L90.0--L90.0
+two_mismatch_sectors4	two_mismatch sectors4	sector	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5	L0--L90.0--L90.0--R60.0--L90.0--L90.0
+two_mismatch_sectors5	two_mismatch sectors5	sector	line_0.5, arc_0.5_120.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5	L0--L90.0--L90.0--R30.0--L90.0--L90.0
+two_mismatch_sectors6	two_mismatch sectors6	sector	line_0.5, arc_0.5_120.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5	L0--L90.0--L90.0--R90.0--L90.0--L90.0
+two_mismatch_sectors7	two_mismatch sectors7	sector	line_0.5, arc_0.5_56.0, line_0.5, line_0.5, arc_0.5_56.0, line_0.5	L0--L90.0--L90.0--R30.0--L90.0--L90.0
+two_mismatch_sectors8	two_mismatch sectors8	sector	line_0.5, arc_0.5_56.0, line_0.5, line_0.5, arc_0.5_56.0, line_0.5	L0--L90.0--L90.0--R90.0--L90.0--L90.0
+two_mismatch_sectors9	two_mismatch sectors9	sector	line_0.5, arc_0.5_56.0, line_0.5, line_0.5, arc_0.5_56.0, line_0.5	L0--L90.0--L90.0--R150.0--L90.0--L90.0
+three_mismatch_sectors1	three_mismatch sectors1	sector	line_0.5, arc_0.5_60.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5	L0--L90.0--L90.0--R120.0--L90.0--L90.0--R120.0--L90.0--L90.0
+three_mismatch_sectors2	three_mismatch sectors2	sector	line_0.5, arc_0.5_60.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5	L0--L90.0--L90.0--R150.0--L90.0--L90.0--R120.0--L90.0--L90.0
+three_mismatch_sectors3	three_mismatch sectors3	sector	line_0.5, arc_0.5_60.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5, line_0.5, arc_0.5_60.0, line_0.5	L0--L90.0--L90.0--R150.0--L90.0--L90.0--R150.0--L90.0--L90.0
+three_mismatch_triangles1	three_mismatch triangles1	enneagon*	line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L120.0--L120.0--R150.0--L120.0--L120.0--R150.0--L120.0--L120.0
+three_mismatch_triangles2	three_mismatch triangles2	enneagon*	line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L120.0--L120.0--R120.0--L120.0--L120.0--R150.0--L120.0--L120.0
+three_mismatch_triangles3	three_mismatch triangles3	enneagon*	line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L120.0--L120.0--R120.0--L120.0--L120.0--R120.0--L120.0--L120.0
+three_mismatch_triangles4	three_mismatch triangles4	enneagon*	line_0.5, line_0.707, line_0.5, line_0.5, line_0.707, line_0.5, line_0.5, line_0.707, line_0.5	L0--L135.0--L135.0--R150.0--L135.0--L135.0--R150.0--L135.0--L135.0
+two_mismatch_triangles1	two_mismatch triangles1	hexagon*	line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L120.0--L120.0--R150.0--L120.0--L120.0
+two_mismatch_triangles2	two_mismatch triangles2	hexagon*	line_0.5, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L120.0--L120.0--R90.0--L120.0--L120.0
+two_mismatch_triangles3	two_mismatch triangles3	hexagon*	line_0.8, line_0.8, line_0.8, line_0.3, line_0.3, line_0.3	L0--L120.0--L120.0--R150.0--L120.0--L120.0
+two_mismatch_triangles4	two_mismatch triangles4	hexagon*	line_0.8, line_0.8, line_0.8, line_0.3, line_0.3, line_0.3	L0--L120.0--L120.0--R90.0--L120.0--L120.0
+two_mismatch_triangles5	two_mismatch triangles5	hexagon*	line_0.5, line_0.707, line_0.5, line_0.5, line_0.707, line_0.5	L0--L135.0--L135.0--R150.0--L135.0--L135.0
+two_mismatch_triangles6	two_mismatch triangles6	hexagon*	line_0.5, line_0.707, line_0.5, line_0.5, line_0.707, line_0.5	L0--L135.0--L135.0--R120.0--L135.0--L135.0
+two_mismatch_triangles7	two_mismatch triangles7	hexagon*	line_0.7, line_0.99, line_0.7, line_0.3, line_0.424, line_0.3	L0--L135.0--L135.0--R150.0--L135.0--L135.0
+two_mismatch_triangles8	two_mismatch triangles8	hexagon*	line_0.7, line_0.99, line_0.7, line_0.3, line_0.424, line_0.3	L0--L135.0--L135.0--R120.0--L135.0--L135.0
+two_mismatch_triangles9	two_mismatch triangles9	hexagon*	line_0.5, line_0.707, line_0.5, line_0.6, line_0.6, line_0.6	L0--L135.0--L135.0--R120.0--L120.0--L120.0
+two_mismatch_triangles10	two_mismatch triangles10	hexagon*	line_0.7, line_0.99, line_0.7, line_0.3, line_0.3, line_0.3	L0--L135.0--L135.0--R120.0--L120.0--L120.0
+two_mismatch_triangles11	two_mismatch triangles11	hexagon*	line_0.3, line_0.424, line_0.3, line_0.8, line_0.8, line_0.8	L0--L135.0--L135.0--R120.0--L120.0--L120.0
+mismatch_triangle_square1	mismatch triangle square1	hexagon*	line_0.5, line_0.707, line_0.5, line_0.4, line_0.4, line_0.4, line_0.4	L0--L135.0--L135.0--R120.0--L90.0--L90.0--L90.0
+mismatch_triangle_square2	mismatch triangle square2	hexagon*	line_0.5, line_0.707, line_0.5, line_0.4, line_0.4, line_0.4, line_0.4	L0--L135.0--L135.0--R150.0--L90.0--L90.0--L90.0
+mismatch_triangle_square3	mismatch triangle square3	hexagon*	line_0.7, line_0.99, line_0.7, line_0.2, line_0.2, line_0.2, line_0.2	L0--L135.0--L135.0--R120.0--L90.0--L90.0--L90.0
+mismatch_triangle_square4	mismatch triangle square4	hexagon*	line_0.7, line_0.99, line_0.7, line_0.2, line_0.2, line_0.2, line_0.2	L0--L135.0--L135.0--R150.0--L90.0--L90.0--L90.0
+mismatch_triangle_square5	mismatch triangle square5	hexagon*	line_0.3, line_0.424, line_0.3, line_0.7, line_0.7, line_0.7, line_0.7	L0--L135.0--L135.0--R120.0--L90.0--L90.0--L90.0
+mismatch_triangle_square6	mismatch triangle square6	hexagon*	line_0.3, line_0.424, line_0.3, line_0.7, line_0.7, line_0.7, line_0.7	L0--L135.0--L135.0--R150.0--L90.0--L90.0--L90.0
+mismatch_triangle_rec1	mismatch triangle rec1	hexagon*	line_0.5, line_0.707, line_0.5, line_0.3, line_0.5, line_0.3, line_0.5	L0--L135.0--L135.0--R120.0--L90.0--L90.0--L90.0
+mismatch_triangle_rec2	mismatch triangle rec2	hexagon*	line_0.5, line_0.707, line_0.5, line_0.3, line_0.5, line_0.3, line_0.5	L0--L135.0--L135.0--R150.0--L90.0--L90.0--L90.0
+mismatch_triangle_rec3	mismatch triangle rec3	hexagon*	line_0.7, line_0.99, line_0.7, line_0.3, line_0.2, line_0.3, line_0.2	L0--L135.0--L135.0--R120.0--L90.0--L90.0--L90.0
+mismatch_triangle_rec4	mismatch triangle rec4	hexagon*	line_0.7, line_0.99, line_0.7, line_0.3, line_0.2, line_0.3, line_0.2	L0--L135.0--L135.0--R150.0--L90.0--L90.0--L90.0
+mismatch_triangle_rec5	mismatch triangle rec5	hexagon*	line_0.3, line_0.424, line_0.3, line_0.6, line_0.7, line_0.6, line_0.7	L0--L135.0--L135.0--R120.0--L90.0--L90.0--L90.0
+mismatch_triangle_rec6	mismatch triangle rec6	hexagon*	line_0.3, line_0.424, line_0.3, line_0.6, line_0.7, line_0.6, line_0.7	L0--L135.0--L135.0--R150.0--L90.0--L90.0--L90.0
+mismatch_sector_square1	mismatch sector square1	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L90.0--L90.0--R120.0--L90.0--L90.0--L90.0
+mismatch_sector_square2	mismatch sector square2	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L90.0--L90.0--R150.0--L90.0--L90.0--L90.0
+mismatch_sector_square3	mismatch sector square3	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90.0--L90.0--R120.0--L90.0--L90.0--L90.0
+mismatch_sector_square4	mismatch sector square4	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90.0--L90.0--R150.0--L90.0--L90.0--L90.0
+mismatch_sector_square5	mismatch sector square5	sector	line_0.5, arc_0.5_140.0, line_0.5, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90.0--L90.0--R120.0--L90.0--L90.0--L90.0
+mismatch_sector_square6	mismatch sector square6	sector	line_0.5, arc_0.5_140.0, line_0.5, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90.0--L90.0--R150.0--L90.0--L90.0--L90.0
+mismatch_sector_rec1	mismatch sector rec1	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.3, line_0.6, line_0.3, line_0.6	L0--L90.0--L90.0--R120.0--L90.0--L90.0--L90.0
+mismatch_sector_rec2	mismatch sector rec2	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.3, line_0.6, line_0.3, line_0.6	L0--L90.0--L90.0--R150.0--L90.0--L90.0--L90.0
+mismatch_sector_rec3	mismatch sector rec3	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.3, line_0.2, line_0.3, line_0.2	L0--L90.0--L90.0--R120.0--L90.0--L90.0--L90.0
+mismatch_sector_rec4	mismatch sector rec4	sector	line_0.5, arc_0.5_100.0, line_0.5, line_0.3, line_0.2, line_0.3, line_0.2	L0--L90.0--L90.0--R150.0--L90.0--L90.0--L90.0
+mismatch_sector_rec5	mismatch sector rec5	sector	line_0.5, arc_0.5_140.0, line_0.5, line_0.3, line_0.2, line_0.3, line_0.2	L0--L90.0--L90.0--R120.0--L90.0--L90.0--L90.0
+mismatch_sector_rec6	mismatch sector rec6	sector	line_0.5, arc_0.5_140.0, line_0.5, line_0.3, line_0.2, line_0.3, line_0.2	L0--L90.0--L90.0--R150.0--L90.0--L90.0--L90.0
+two_intersect_sectors1	two_intersect_sectors1	sector	line_0.632, arc_0.5_106.26, line_0.632, arc_0.5_-106.26	L0--L108.43--R161.57--L71.57
+two_intersect_sectors2	two_intersect_sectors2	sector	line_0.632, line_0.632, arc_0.5_106.26, line_0.632, line_0.632, arc_0.5_-106.26	L0--L120.0--L48.43--R101.57--R120.0--L131.57
+two_intersect_sectors3	two_intersect_sectors3	sector	line_0.3, line_0.632, line_0.3, arc_0.5_106.26, line_0.632, line_0.632, arc_0.5_-106.26	L0--L90.0--L90.0--L18.43--R101.57--R120.0--L131.57
+square_dagger1	square dagger1	octagon*	line_0.4, line_0.4, line_0.4, line_0.4, line_0.608, line_0.412, line_0.412, line_0.608	L0--L90.0--L90.0--L90.0--R80.538--L156.501--R61.928--L156.501
+square_dagger2	square dagger2	octagon*	line_0.4, line_0.4, line_0.4, line_0.4, line_0.608, line_0.412, line_0.412, line_0.608	L0--L90.0--L90.0--L90.0--R110.538--L156.501--R61.928--L156.501
+square_dagger3	square dagger3	octagon*	line_0.4, line_0.4, line_0.4, line_0.4, line_0.608, line_0.412, line_0.412, line_0.608	L0--L90.0--L90.0--L90.0--R140.538--L156.501--R61.928--L156.501
+square_dagger4	square dagger4	octagon*	line_0.2, line_0.2, line_0.2, line_0.2, line_0.851, line_0.577, line_0.577, line_0.851	L0--L90.0--L90.0--L90.0--R80.538--L156.501--R61.928--L156.501
+square_dagger5	square dagger5	octagon*	line_0.2, line_0.2, line_0.2, line_0.2, line_0.851, line_0.577, line_0.577, line_0.851	L0--L90.0--L90.0--L90.0--R110.538--L156.501--R61.928--L156.501
+square_dagger6	square dagger6	octagon*	line_0.2, line_0.2, line_0.2, line_0.2, line_0.851, line_0.577, line_0.577, line_0.851	L0--L90.0--L90.0--L90.0--R140.538--L156.501--R61.928--L156.501
+square_dagger7	square dagger7	octagon*	line_0.7, line_0.7, line_0.7, line_0.7, line_0.405, line_0.275, line_0.275, line_0.405	L0--L90.0--L90.0--L90.0--R80.538--L156.501--R61.928--L156.501
+square_dagger8	square dagger8	octagon*	line_0.7, line_0.7, line_0.7, line_0.7, line_0.405, line_0.275, line_0.275, line_0.405	L0--L90.0--L90.0--L90.0--R110.538--L156.501--R61.928--L156.501
+square_dagger9	square dagger9	octagon*	line_0.7, line_0.7, line_0.7, line_0.7, line_0.405, line_0.275, line_0.275, line_0.405	L0--L90.0--L90.0--L90.0--R140.538--L156.501--R61.928--L156.501
+trapezoid_parallel1	trapezoid parallel1	octagon*	line_0.447, line_0.4, line_0.447, line_0.4, line_0.447, line_0.2, line_0.447, line_0.6	L0--L116.565--L63.435--L116.565--R33.435--L63.435--L63.435--L116.565
+trapezoid_parallel2	trapezoid parallel2	octagon*	line_0.447, line_0.4, line_0.447, line_0.4, line_0.447, line_0.2, line_0.447, line_0.6	L0--L116.565--L63.435--L116.565--R83.435--L63.435--L63.435--L116.565
+trapezoid_parallel3	trapezoid parallel3	octagon*	line_0.447, line_0.4, line_0.447, line_0.4, line_0.447, line_0.2, line_0.447, line_0.6	L0--L116.565--L63.435--L116.565--R123.435--L63.435--L63.435--L116.565
+trapezoid_parallel4	trapezoid parallel4	octagon*	line_0.224, line_0.2, line_0.224, line_0.2, line_0.626, line_0.28, line_0.626, line_0.84	L0--L116.565--L63.435--L116.565--R33.435--L63.435--L63.435--L116.565
+trapezoid_parallel5	trapezoid parallel5	octagon*	line_0.224, line_0.2, line_0.224, line_0.2, line_0.626, line_0.28, line_0.626, line_0.84	L0--L116.565--L63.435--L116.565--R83.435--L63.435--L63.435--L116.565
+trapezoid_parallel6	trapezoid parallel6	octagon*	line_0.224, line_0.2, line_0.224, line_0.2, line_0.626, line_0.28, line_0.626, line_0.84	L0--L116.565--L63.435--L116.565--R123.435--L63.435--L63.435--L116.565
+trapezoid_triangle1	trapezoid triangle1	heptagon*	line_0.5, line_0.781, line_0.6, line_0.447, line_0.6, line_0.447, line_0.2	L0--L129.806--L140.194--R146.565--L116.565--L116.656--L63.435
+trapezoid_triangle2	trapezoid triangle2	heptagon*	line_0.5, line_0.781, line_0.6, line_0.447, line_0.6, line_0.447, line_0.2	L0--L129.806--L140.194--R106.565--L116.565--L116.435--L63.435
+trapezoid_triangle3	trapezoid triangle3	heptagon*	line_0.5, line_0.781, line_0.6, line_0.447, line_0.6, line_0.447, line_0.2	L0--L129.806--L140.194--R66.565--L116.565--L116.435--L63.435
+trapezoid_triangle4	trapezoid triangle4	heptagon*	line_0.25, line_0.391, line_0.3, line_0.626, line_0.84, line_0.626, line_0.28	L0--L129.806--L140.194--R146.565--L116.565--L116.656--L63.435
+trapezoid_triangle5	trapezoid triangle5	heptagon*	line_0.25, line_0.391, line_0.3, line_0.626, line_0.84, line_0.626, line_0.28	L0--L129.806--L140.194--R106.565--L116.565--L116.435--L63.435
+trapezoid_triangle6	trapezoid triangle6	heptagon*	line_0.25, line_0.391, line_0.3, line_0.626, line_0.84, line_0.626, line_0.28	L0--L129.806--L140.194--R66.565--L116.565--L116.435--L63.435
+dagger_triangle1	dagger triangle1	heptagon*	line_0.894, line_0.5, line_0.5, line_0.583, line_0.361, line_0.361, line_0.583	L0--L153.435--L53.13--R120.964--L154.654--R67.38--L154.654
+dagger_triangle2	dagger triangle2	heptagon*	line_0.894, line_0.5, line_0.5, line_0.583, line_0.361, line_0.361, line_0.583	L0--L153.435--L53.13--R60.964--L154.654--R67.38--L154.654
+dagger_triangle3	dagger triangle3	heptagon*	line_0.894, line_0.5, line_0.5, line_0.583, line_0.361, line_0.361, line_0.583	L0--L153.435--L53.13--L29.036--L154.654--R67.38--L154.654
+dagger_triangle4	dagger triangle4	heptagon*	line_0.447, line_0.25, line_0.25, line_0.816, line_0.505, line_0.505, line_0.816	L0--L153.435--L53.13--R120.964--L154.654--R67.38--L154.654
+dagger_triangle5	dagger triangle5	heptagon*	line_0.447, line_0.25, line_0.25, line_0.816, line_0.505, line_0.505, line_0.816	L0--L153.435--L53.13--R60.964--L154.654--R67.38--L154.654
+dagger_triangle6	dagger triangle6	heptagon*	line_0.447, line_0.25, line_0.25, line_0.816, line_0.505, line_0.505, line_0.816	L0--L153.435--L53.13--L29.036--L154.654--R67.38--L154.654
+dagger_sector1	dagger sector1	sector*	line_0.5, arc_0.5_60.0, line_0.5, line_0.583, line_0.306, line_0.306, line_0.583	L0--L90.0--L90.0--R91.928--L141.37--R39.207--L141.37
+dagger_sector2	dagger sector2	sector*	line_0.5, arc_0.5_60.0, line_0.5, line_0.583, line_0.306, line_0.306, line_0.583	L0--L90.0--L90.0--R141.928--L141.37--R39.207--L141.37
+dagger_sector3	dagger sector3	sector*	line_0.5, arc_0.5_60.0, line_0.5, line_0.583, line_0.306, line_0.306, line_0.583	L0--L90.0--L90.0--R161.928--L141.37--R39.207--L141.37
+dagger_sector4	dagger sector4	sector*	line_0.5, arc_0.5_60.0, line_0.5, line_0.292, line_0.153, line_0.153, line_0.292	L0--L90.0--L90.0--R91.928--L141.37--R39.207--L141.37
+dagger_sector5	dagger sector5	sector*	line_0.5, arc_0.5_60.0, line_0.5, line_0.292, line_0.153, line_0.153, line_0.292	L0--L90.0--L90.0--R141.928--L141.37--R39.207--L141.37
+dagger_sector6	dagger sector6	sector*	line_0.5, arc_0.5_60.0, line_0.5, line_0.292, line_0.153, line_0.153, line_0.292	L0--L90.0--L90.0--R161.928--L141.37--R39.207--L141.37
+parallel_sector1	parallel sector1	sector*	line_0.5, arc_0.5_100.0, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L90.0--L90.0--R100.0--L130.0--L50.0--L130.0
+parallel_sector2	parallel sector2	sector*	line_0.5, arc_0.5_100.0, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L90.0--L90.0--R70.0--L130.0--L50.0--L130.0
+parallel_sector3	parallel sector3	sector*	line_0.5, arc_0.5_100.0, line_0.5, line_0.5, line_0.5, line_0.5, line_0.5	L0--L90.0--L90.0--R150.0--L130.0--L50.0--L130.0
+parallel_sector4	parallel sector4	sector*	line_0.5, arc_0.5_100.0, line_0.5, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90.0--L90.0--R100.0--L130.0--L50.0--L130.0
+parallel_sector5	parallel sector5	sector*	line_0.5, arc_0.5_100.0, line_0.5, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90.0--L90.0--R70.0--L130.0--L50.0--L130.0
+parallel_sector6	parallel sector6	sector*	line_0.5, arc_0.5_100.0, line_0.5, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90.0--L90.0--R150.0--L130.0--L50.0--L130.0
+hat_sector1	hat sector1	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, line_0.8, line_0.447, line_0.447, line_0.5	L0--L90.0--L90.0--R90.0--L126.87--L153.435--R126.87--L153.435
+hat_sector2	hat sector2	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, line_0.8, line_0.447, line_0.447, line_0.5	L0--L90.0--L90.0--R120.0--L126.87--L153.435--R126.87--L153.435
+hat_sector3	hat sector3	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, line_0.8, line_0.447, line_0.447, line_0.5	L0--L90.0--L90.0--R60.0--L126.87--L153.435--R126.87--L153.435
+hat_sector4	hat sector4	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.227, line_0.364, line_0.203, line_0.203, line_0.227	L0--L90.0--L90.0--R90.0--L126.87--L153.435--R126.87--L153.435
+hat_sector5	hat sector5	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.227, line_0.364, line_0.203, line_0.203, line_0.227	L0--L90.0--L90.0--R120.0--L126.87--L153.435--R126.87--L153.435
+hat_sector6	hat sector6	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.227, line_0.364, line_0.203, line_0.203, line_0.227	L0--L90.0--L90.0--R60.0--L126.87--L153.435--R126.87--L153.435
+hat_sector7	hat sector7	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, line_0.762, line_0.412, line_0.4, line_0.316	L0--L90.0--L90.0--R90.0--L103.671--L99.162--L104.036--R71.565
+hat_sector8	hat sector8	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, line_0.762, line_0.412, line_0.4, line_0.316	L0--L90.0--L90.0--R120.0--L103.671--L99.162--L104.036--R71.565
+hat_sector9	hat sector9	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.5, line_0.762, line_0.412, line_0.4, line_0.316	L0--L90.0--L90.0--R60.0--L103.671--L99.162--L104.036--R71.565
+hat_sector10	hat sector10	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.25, line_0.381, line_0.206, line_0.2, line_0.158	L0--L90.0--L90.0--R90.0--L103.671--L99.162--L104.036--R71.565
+hat_sector11	hat sector11	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.25, line_0.381, line_0.206, line_0.2, line_0.158	L0--L90.0--L90.0--R120.0--L103.671--L99.162--L104.036--R71.565
+hat_sector12	hat sector12	sector*	line_0.5, arc_0.5_90.0, line_0.5, line_0.25, line_0.381, line_0.206, line_0.2, line_0.158	L0--L90.0--L90.0--R60.0--L103.671--L99.162--L104.036--R71.565
+jar_triangle1	jar triangle1	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.66, line_0.66, line_0.66	L0--L78.69--L53.13--L70.56--R80.0--L120.0--L120.0
+jar_triangle2	jar triangle2	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.66, line_0.66, line_0.66	L0--L78.69--L53.13--L70.56--R110.0--L120.0--L120.0
+jar_triangle3	jar triangle3	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.66, line_0.66, line_0.66	L0--L78.69--L53.13--L70.56--R30.0--L120.0--L120.0
+jar_triangle4	jar triangle4	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.22, line_0.22, line_0.22	L0--L78.69--L53.13--L70.56--R80.0--L120.0--L120.0
+jar_triangle5	jar triangle5	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.22, line_0.22, line_0.22	L0--L78.69--L53.13--L70.56--R110.0--L120.0--L120.0
+jar_triangle6	jar triangle6	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.22, line_0.22, line_0.22	L0--L78.69--L53.13--L70.56--R30.0--L120.0--L120.0
+jar_square1	jar square1	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.46, line_0.46, line_0.46, line_0.46	L0--L78.69--L53.13--L70.56--R110.0--L90.0--L90.0--L90.0
+jar_square2	jar square2	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.46, line_0.46, line_0.46, line_0.46	L0--L78.69--L53.13--L70.56--R140.0--L90.0--L90.0--L90.0
+jar_square3	jar square3	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.46, line_0.46, line_0.46, line_0.46	L0--L78.69--L53.13--L70.56--R60.0--L90.0--L90.0--L90.0
+jar_square4	jar square4	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.18, line_0.18, line_0.18, line_0.18	L0--L78.69--L53.13--L70.56--R110.0--L90.0--L90.0--L90.0
+jar_square5	jar square5	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.18, line_0.18, line_0.18, line_0.18	L0--L78.69--L53.13--L70.56--R140.0--L90.0--L90.0--L90.0
+jar_square6	jar square6	sector*	line_0.51, line_0.3, arc_0.5_90.0, line_0.361, line_0.18, line_0.18, line_0.18, line_0.18	L0--L78.69--L53.13--L70.56--R60.0--L90.0--L90.0--L90.0
+irregular_jar_triangle1	irregular jar triangle1	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.781, line_0.949, line_0.5	L0--R56.31--L109.44--L90.0--R60.0--L148.241--L124.695
+irregular_jar_triangle2	irregular jar triangle2	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.781, line_0.949, line_0.5	L0--R56.31--L109.44--L90.0--R120.0--L148.241--L124.695
+irregular_jar_triangle3	irregular jar triangle3	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.781, line_0.949, line_0.5	L0--R56.31--L109.44--L90.0--R30.0--L148.241--L124.695
+irregular_jar_triangle4	irregular jar triangle4	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.312, line_0.38, line_0.2	L0--R56.31--L109.44--L90.0--R60.0--L148.241--L124.695
+irregular_jar_triangle5	irregular jar triangle5	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.312, line_0.38, line_0.2	L0--R56.31--L109.44--L90.0--R120.0--L148.241--L124.695
+irregular_jar_triangle6	irregular jar triangle6	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.312, line_0.38, line_0.2	L0--R56.31--L109.44--L90.0--R30.0--L148.241--L124.695
+irregular_jar_dagger1	irregular jar dagger1	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.566, line_0.51, line_0.51, line_0.721	L0--R56.31--L109.44--L90.0--R120.0--L146.31--R22.62--L157.62
+irregular_jar_dagger2	irregular jar dagger2	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.566, line_0.51, line_0.51, line_0.721	L0--R56.31--L109.44--L90.0--R150.0--L146.31--R22.62--L157.62
+irregular_jar_dagger3	irregular jar dagger3	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.566, line_0.51, line_0.51, line_0.721	L0--R56.31--L109.44--L90.0--R60.0--L146.31--R22.62--L157.62
+irregular_jar_dagger4	irregular jar dagger4	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.566, line_0.51, line_0.51, line_0.721	L0--R56.31--L109.44--L90.0--R30.0--L146.31--R22.62--L157.62
+irregular_jar_dagger5	irregular jar dagger5	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.226, line_0.204, line_0.204, line_0.288	L0--R56.31--L109.44--L90.0--R120.0--L146.31--R22.62--L157.62
+irregular_jar_dagger6	irregular jar dagger6	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.226, line_0.204, line_0.204, line_0.288	L0--R56.31--L109.44--L90.0--R150.0--L146.31--R22.62--L157.62
+irregular_jar_dagger7	irregular jar dagger7	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.226, line_0.204, line_0.204, line_0.288	L0--R56.31--L109.44--L90.0--R60.0--L146.31--R22.62--L157.62
+irregular_jar_dagger8	irregular jar dagger8	sector*	line_0.2, line_0.361, arc_0.5_90.0, line_0.5, line_0.226, line_0.204, line_0.204, line_0.288	L0--R56.31--L109.44--L90.0--R30.0--L146.31--R22.62--L157.62
+advanced_lamp1	advanced lamp1	enneagon*	line_0.6, line_0.283, line_0.4, line_0.447, line_0.539, line_0.539, line_0.447, line_0.4, line_0.283	L0--L135.0--R45.0--R63.435--L131.634--L43.603--L131.634--R63.435--R45.0
+advanced_lamp2	advanced lamp2	enneagon*	line_0.6, line_0.283, line_0.4, line_0.447, line_0.539, line_0.566, line_0.3, line_0.4, line_0.283	L0--L135.0--R45.0--R63.435--L131.634--L66.801--L135.0--R90.0--R45.0
+advanced_lamp3	advanced lamp3	enneagon*	line_0.6, line_0.283, line_0.4, line_0.3, line_0.566, line_0.566, line_0.3, line_0.4, line_0.283	L0--L135.0--R45.0--R90.0--L135.0--L90.0--L135.0--R90.0--R45.0
+advanced_lamp4	advanced lamp4	enneagon*	line_0.6, line_0.283, line_0.4, line_0.3, line_0.4, line_0.9, line_0.566, line_0.4, line_0.283	L0--L135.0--R45.0--R90.0--L90.0--L90.0--L135.0--R45.0--R45.0
+advanced_lamp5	advanced lamp5	enneagon*	line_0.6, line_0.283, line_0.4, line_0.3, line_0.566, line_0.5, line_0.566, line_0.4, line_0.283	L0--L135.0--R45.0--R90.0--L135.0--L45.0--L135.0--R45.0--R45.0
+advanced_lamp6	advanced lamp6	enneagon*	line_1.0, line_0.447, line_0.4, line_0.3, line_0.4, line_0.985, line_0.4, line_0.4, line_0.447	L0--L153.435--R63.435--R90.0--L90.0--L113.962--L156.038--R90.0--R63.435
+advanced_lamp7	advanced lamp7	enneagon*	line_0.4, line_0.141, line_0.8, line_0.141, line_0.283, line_0.283, line_0.141, line_0.8, line_0.141	L0--L135.0--R45.0--R45.0--L90.0--L90.0--L90.0--R45.0--R45.0
+thin_sym_nail1	thin symmetric nail1	hexagon	line_0.7, line_0.316, line_0.316, line_0.7, line_0.316, line_0.316	L0--L18.435--L143.13--L18.435--L18.435--L143.13
+thin_sym_nail2	thin symmetric nail2	hexagon	line_0.5, line_0.316, line_0.316, line_0.5, line_0.51, line_0.51	L0--L18.435--L143.13--L18.435--L11.31--L157.38
+thin_sym_nail3	thin symmetric nail3	hexagon	line_0.5, line_0.51, line_0.316, line_0.5, line_0.51, line_0.316	L0--L11.31--L150.255--L18.435--L11.31--L150.255
+thin_sym_nail4	thin symmetric nail4	pentagon	line_0.9, line_0.51, line_0.316, line_0.5, line_0.632	L0--L11.31--L150.255--L18.435--L18.435
+thin_sym_nail5	thin symmetric nail5	pentagon	line_1.0, line_0.172, line_0.243, line_0.538, line_0.415	L0--L26.565--L135--L18.435--L21.801
+thin_sym_nail6	thin symmetric nail6	pentagon	line_0.9, line_0.31, line_0.506, line_0.7, line_0.16	L0--L14.931--L155.978--L9.09--L90
+thin_sym_nail7	thin symmetric nail7	pentagon	line_0.9, line_0.31, line_0.31, line_0.9, line_0.16	L0--L14.931--L150.137--L14.931--L90
+open_triangle1	open triangle1	quadrangle*	line_0.8, line_0.8, line_0.8	L0--L90--L90
+open_triangle2	open triangle2	quadrangle*	line_0.9, line_0.5, line_0.9	L0--L90--L90
+open_triangle3	open triangle3	quadrangle*	line_0.5, line_0.4, line_0.7	L0--L45--L135
+open_triangle4	open triangle4	quadrangle*	line_0.3, line_0.6, line_0.4	L0--L60--L120
+open_triangle5	open triangle5	quadrangle*	line_0.6, line_0.848, line_0.6	L0--R135--L135
+open_triangle6	open triangle6	quadrangle*	line_0.5, line_1.0, line_0.5	L0--R120--L120
+open_triangle7	open triangle7	triangle*	line_0.5, line_0.5, line_0.9	L0--L120--L120
+open_triangle8	open triangle8	triangle*	line_0.848, line_0.6, line_1.0	L0--L135--L90
+open_triangle9	open triangle9	triangle*	line_1.0, line_0.577, line_0.9	L0--L150.0--L60.0
+open_triangle10	open triangle10	triangle*	line_1.0, line_0.732, line_1.0	L0--L150.0--L75.0
+bala_two_intersect_circles_new1	balanced two intersect circles new1	arc	arc_0.5_75.0, arc_0.5_-75.0, arc_0.5_-75.0, arc_0.5_75.0	L0--R180.0--R105.0--L180.0
+bala_two_intersect_circles_new2	balanced two intersect circles new2	arc	arc_0.5_75.0, arc_0.5_-75.0, arc_0.5_-75.0, arc_0.5_75.0	L0--R150.0--R105.0--L150.0
+bala_two_intersect_circles_new3	balanced two intersect circles new3	arc	arc_0.5_75.0, arc_0.5_-75.0, arc_0.5_-75.0, arc_0.5_75.0	L0--R120.0--R105.0--L120.0
+bala_two_intersect_circles_new4	balanced two intersect circles new4	arc	arc_0.5_75.0, arc_0.5_-75.0, arc_0.5_-75.0, arc_0.5_75.0	L0--R90.0--R105.0--L90.0
+medium_intersect_circle	medium linersection of two circles	arc	arc_0.5_120.0, arc_0.5_120.0	L0--L60.0
+open_line_s_new1	open line s new1	arc	arc_0.5_60.0, line_0.4, arc_0.5_-60.0	L0--L0.0--L180.0
+open_line_s_new2	open line s new2	arc	line_0.3, arc_0.5_45.0, arc_0.5_-45.0, line_0.3	L0--L0.0--L180.0--L180
+open_s_new1	open s new1	arc	arc_0.5_75.0, arc_0.5_-75.0	L0--L180.0
+open_s_new2	open s new2	arc	arc_0.5_105.0, arc_0.5_-105.0	L0--L180.0
+thin_three_sides1	thin three_sides1	quadrangle*	line_1.0, line_0.14, arc_0.5_60.0, arc_0.5_60.0, line_0.14	L0--L90.0--L60.0--R60.0--L60.0
+thin_three_sides2	thin three_sides2	quadrangle*	line_1.0, line_0.2, arc_0.5_-60.0, arc_0.5_-60.0, line_0.2	L0--L90.0--R60.0--L60.0--R60.0
+thin_three_sides3	thin three_sides3	triangle	line_0.9, line_0.912, line_0.15	L0--L170.538--L99.462
+arc_three_lines1	arc three_lines1	arc	line_0.4, arc_0.5_90, line_0.4, arc_0.5_90.0, line_0.4	L0--L0--L0--L0--L0
+arc_three_lines2	arc three_lines2	arc	line_0.3, arc_0.5_60, line_0.3, arc_0.5_60.0, line_0.3	L0--L0--L0--L0--L0
+two_parts_three_lines1	two_parts three_lines1	sector*	line_0.707, arc_0.5_90, line_0.5, arc_0.5_60.0, line_0.5	L0--L135--R135--L90--L90
+two_parts_three_lines2	two_parts three_lines2	sector*	line_0.707, arc_0.5_90, line_0.5, arc_0.5_60.0, line_0.5	L0--L135--L45--L90--L90
+two_parts_three_lines3	two_parts three_lines3	sector*	line_0.707, arc_0.5_90, line_0.5, arc_0.5_90.0, line_0.5	L0--L135--R155--L90--L90
+two_parts_three_lines4	two_parts three_lines4	sector*	line_0.707, arc_0.5_90, line_0.5, arc_0.5_90.0, line_0.5	L0--L135--L15--L90--L90
+two_parts_three_lines5	two_parts three_lines5	sector*	line_0.866, arc_0.5_120, line_0.5, arc_0.5_60.0, line_0.5	L0--L120--L30--L90--L90
+two_parts_three_lines6	two_parts three_lines6	sector*	line_1.0, arc_0.5_180, line_0.5, arc_0.5_60.0, line_0.5	L0--L90--L0--L90--L90
+exist_triangle_three_lines1	exist_triangle three_lines1	arc	arc_0.5_90, arc_0.5_90, line_0.5, line_0.5, line_0.707	L0--L90--L0--L90--L135
+exist_triangle_three_lines2	exist_triangle three_lines2	arc	arc_0.5_90, arc_0.5_90, line_0.5, line_0.5, line_0.5	L0--L90--L0--L120--L120
+exist_triangle_three_lines3	exist_triangle three_lines3	arc	arc_0.5_90, arc_0.5_90, line_0.5, line_0.5, line_0.866	L0--L90--L0--L60--L150
+exist_triangle_three_lines4	exist_triangle three_lines4	arc	arc_0.5_120, arc_0.5_120, line_0.5, line_0.5, line_0.866	L0--L60--L35--L60--L150
+exist_triangle_three_lines5	exist_triangle three_lines5	arc	arc_0.5_120, arc_0.5_120, line_0.2, line_0.2, line_0.224	L0--L60--R30--L90--L135
+exist_triangle_three_lines6	exist_triangle three_lines6	arc	arc_0.5_120, arc_0.5_120, line_0.2, line_0.2, line_0.2	L0--L60--R30--L120--L120
+exist_triangle_three_lines7	exist_triangle three_lines7	arc	arc_0.5_120, arc_0.5_120, line_0.2, line_0.2, line_0.2	L0--L60--R90--L120--L120
+exist_triangle_three_lines8	exist_triangle three_lines8	arc	arc_0.5_120, arc_0.5_120, line_0.2, line_0.2, line_0.346	L0--L60--L0--L60--L150
+exist_triangle_three_lines9	exist_triangle three_lines9	arc	arc_0.5_120, arc_0.5_120, line_0.2, line_0.2, line_0.346	L0--L60--R45--L60--L150
+no_acute_angle_four_lines1	no_acute_angle four_lines1	quadrangle*	line_0.6, line_0.6, line_0.6, line_0.6	L0--L72--L72--L72
+no_acute_angle_four_lines2	no_acute_angle four_lines2	quadrangle*	line_0.6, line_0.6, line_0.6, line_1.0	L0--L90--L90--L90
+no_acute_angle_four_lines3	no_acute_angle four_lines3	quadrangle*	line_0.3, line_0.6, line_0.3, line_1.0	L0--L90--L90--L90
+no_acute_angle_four_lines4	no_acute_angle four_lines4	quadrangle*	line_0.6, line_0.3, line_0.6, line_1.0	L0--L90--L90--L90
+no_acute_angle_four_lines5	no_acute_angle four_lines5	quadrangle*	line_0.13, line_0.8, line_0.13, line_1.0	L0--L90--L90--L90
+no_acute_angle_four_lines6	no_acute_angle four_lines6	sector*	line_0.5, line_0.5, line_0.5, line_0.5, arc_0.5_180	L0--R90--L90--L90--L0
+no_acute_angle_four_lines7	no_acute_angle four_lines7	sector*	line_0.2, line_0.5, line_0.8, line_0.5, arc_0.5_180	L0--R90--L90--L90--L0
+no_acute_angle_four_lines8	no_acute_angle four_lines8	sector*	line_0.8, line_0.5, line_0.2, line_0.5, arc_0.5_180	L0--R90--L90--L90--L0
+no_acute_angle_four_lines9	no_acute_angle four_lines9	sector*	line_0.25, line_0.707, line_0.25, line_0.5, arc_0.5_180	L0--R45--L45--L90--L0
+exist_quadrangle_five_lines1	exist_quadrangle five_lines1	sector*	arc_0.5_180, line_1.0, line_0.68, line_0.68, line_0.68, line_0.68	L0--L90--R150--L90--L90--L90
+exist_quadrangle_five_lines2	exist_quadrangle five_lines2	sector*	arc_0.5_180, line_1.0, line_0.2, line_0.2, line_0.2, line_0.2	L0--L90--R150--L90--L90--L90
+exist_quadrangle_five_lines3	exist_quadrangle five_lines3	sector*	arc_0.5_180, line_1.0, line_0.5, line_0.15, line_0.5, line_0.15	L0--L90--R150--L90--L90--L90
+exist_quadrangle_five_lines4	exist_quadrangle five_lines4	sector*	arc_0.5_180, line_1.0, line_1.0, line_0.707, line_0.5, line_0.5	L0--L90--R150--L135--L45--L90
+exist_quadrangle_five_lines5	exist_quadrangle five_lines5	sector*	arc_0.5_180, line_1.0, line_0.4, line_0.283, line_0.2, line_0.2	L0--L90--R150--L135--L45--L90
+exist_quadrangle_five_lines6	exist_quadrangle five_lines6	sector*	arc_0.5_180, line_1.0, line_1.0, line_0.4, line_1.0, line_0.4	L0--L90--R150--L45--L135--L45
+exist_quadrangle_five_lines7	exist_quadrangle five_lines7	sector*	arc_0.5_180, line_1.0, line_0.5, line_0.2, line_0.5, line_0.2	L0--L90--R150--L45--L135--L45
+exist_quadrangle_five_lines8	exist_quadrangle five_lines8	sector*	arc_0.5_180, line_1.0, line_0.225, line_0.225, line_0.4, line_0.4	L0--L90--R120--R61.93--L150.02--L121.89
+exist_quadrangle_five_lines9	exist_quadrangle five_lines9	sector*	line_0.894, arc_0.5_106.26, line_0.894, line_0.5, line_0.5	L0--L100.305--L100.305--R116.565--R73.74
+exist_quadrangle_five_lines10	exist_quadrangle five_lines10	sector*	line_0.721, arc_0.5_106.26, line_0.922, line_0.707, line_0.361	L0--L93.81--L114.341--R122.471--R101.31
+exist_quadrangle_five_lines11	exist_quadrangle five_lines11	sector*	line_0.721, arc_0.5_106.26, line_0.566, line_0.3, line_0.361	L0--L93.81--L81.87--R45--R146.31
+exist_quadrangle_five_lines12	exist_quadrangle five_lines12	sector*	line_0.849, arc_0.5_106.26, line_0.849, line_0.224, line_0.224	L0--L81.87--L81.87--R108.435--R53.13
+no_obtuse_angle_six_lines1	no_obtuse_angle six_lines1	sector*	line_1.0, arc_0.5_90.0, line_1.0, line_0.5, line_0.5	L0--L90.0--L90.0--R90.0--R90.0
+no_obtuse_angle_six_lines2	no_obtuse_angle six_lines2	sector*	line_0.7, arc_0.5_90.0, line_0.7, line_0.2, line_0.2	L0--L90.0--L90.0--R90.0--R90.0
+no_obtuse_angle_six_lines3	no_obtuse_angle six_lines3	sector*	line_0.8, arc_0.5_90.0, line_0.65, line_0.3, line_0.15	L0--L90.0--L90.0--R90.0--R90.0
+no_obtuse_angle_six_lines4	no_obtuse_angle six_lines4	sector*	line_0.924, arc_0.5_90.0, line_0.924, line_0.721, line_0.583, line_0.316	L0--L90.0--L90.0--R101.31--R154.654--L139.399
+no_obtuse_angle_six_lines5	no_obtuse_angle six_lines5	sector*	line_0.712, arc_0.5_90.0, line_0.712, line_0.361, line_0.292, line_0.158	L0--L90.0--L90.0--R101.31--R154.654--L139.399
+no_obtuse_angle_six_lines6	no_obtuse_angle six_lines6	sector*	line_0.924, arc_0.5_90.0, line_0.924, line_0.424, line_0.3, line_0.3	L0--L90.0--L90.0--R90--R135--L90
+no_obtuse_angle_six_lines7	no_obtuse_angle six_lines7	sector*	line_0.712, arc_0.5_90.0, line_0.712, line_0.212, line_0.15, line_0.15	L0--L90.0--L90.0--R90--R135--L90
+necked_six_lines1	necked six_lines1	arc	arc_0.5_90, line_0.217, line_0.4, line_0.269, arc_0.5_120, line_0.269, line_0.4, line_0.217	L0--L90--R45--R60--L90--L90--R60--R45
+necked_six_lines2	necked six_lines2	arc	arc_0.5_90, line_0.217, line_0.2, line_0.269, arc_0.5_120, line_0.269, line_0.2, line_0.217	L0--L90--R45--R60--L90--L90--R60--R45
+necked_six_lines3	necked six_lines3	arc	arc_0.5_90, line_0.359, line_0.4, line_0.385, arc_0.5_120, line_0.385, line_0.4, line_0.359	L0--L90--R45--R60--L90--L90--R60--R45
+necked_six_lines4	necked six_lines4	arc	arc_0.5_90, line_0.359, line_0.2, line_0.385, arc_0.5_120, line_0.385, line_0.2, line_0.359	L0--L90--R45--R60--L90--L90--R60--R45
+necked_six_lines5	necked six_lines5	arc	arc_0.5_90, line_0.217, line_0.4, line_0.217, arc_0.5_90, line_0.217, line_0.4, line_0.217	L0--L90--R45--R45--L90--L90--R45--R45
+necked_six_lines6	necked six_lines6	arc	arc_0.5_90, line_0.217, line_0.2, line_0.217, arc_0.5_90, line_0.217, line_0.2, line_0.217	L0--L90--R45--R45--L90--L90--R45--R45
+necked_six_lines7	necked six_lines7	arc	arc_0.5_90, line_0.359, line_0.4, line_0.359, arc_0.5_90, line_0.359, line_0.4, line_0.359	L0--L90--R45--R45--L90--L90--R45--R45
+necked_six_lines8	necked six_lines8	arc	arc_0.5_90, line_0.359, line_0.2, line_0.359, arc_0.5_90, line_0.359, line_0.2, line_0.359	L0--L90--R45--R45--L90--L90--R45--R45
+necked_six_lines9	necked six_lines9	arc	arc_0.5_120, line_0.269, line_0.4, line_0.269, arc_0.5_120, line_0.269, line_0.4, line_0.269	L0--L90--R60--R60--L90--L90--R60--R60
+necked_six_lines10	necked six_lines10	arc	arc_0.5_120, line_0.269, line_0.2, line_0.269, arc_0.5_120, line_0.269, line_0.2, line_0.269	L0--L90--R60--R60--L90--L90--R60--R60
+necked_six_lines11	necked six_lines11	arc	arc_0.5_120, line_0.385, line_0.4, line_0.385, arc_0.5_120, line_0.385, line_0.4, line_0.385	L0--L90--R60--R60--L90--L90--R60--R60
+necked_six_lines12	necked six_lines12	arc	arc_0.5_120, line_0.385, line_0.2, line_0.385, arc_0.5_120, line_0.385, line_0.2, line_0.385	L0--L90--R60--R60--L90--L90--R60--R60
+necked_six_lines13	necked six_lines13	quadrangle*	arc_0.5_90, line_0.25, line_0.4, line_0.25, arc_0.5_90, line_0.25, line_0.4, line_0.25	L0--R45--R90--R90--R45--R45--R90--R90
+necked_six_lines14	necked six_lines14	quadrangle*	arc_0.5_90, line_0.25, line_0.8, line_0.25, arc_0.5_90, line_0.25, line_0.8, line_0.25	L0--R45--R90--R90--R45--R45--R90--R90
+necked_six_lines15	necked six_lines15	quadrangle*	arc_0.5_90, line_0.354, line_0.65, line_0.25, arc_0.5_90, line_0.25, line_0.4, line_0.25	L0--L0--R135--R90--R45--R45--R90--R90
+necked_six_lines16	necked six_lines16	quadrangle*	arc_0.5_90, line_0.354, line_0.95, line_0.25, arc_0.5_90, line_0.25, line_0.7, line_0.25	L0--L0--R135--R90--R45--R45--R90--R90
+necked_six_lines17	necked six_lines17	quadrangle*	arc_0.5_90, line_0.354, line_0.65, line_0.25, arc_0.5_90, line_0.354, line_0.65, line_0.25	L0--L0--R135--R90--R45--L0--R135--R90
+necked_six_lines18	necked six_lines18	quadrangle*	arc_0.5_90, line_0.354, line_0.85, line_0.25, arc_0.5_90, line_0.354, line_0.85, line_0.25	L0--L0--R135--R90--R45--L0--R135--R90
+necked_six_lines19	necked six_lines19	quadrangle*	arc_0.5_90, line_0.354, line_0.9, line_0.354, arc_0.5_90, line_0.25, line_0.4, line_0.25	L0--L0--R135--R135--L0--R45--R90--R90
+necked_six_lines20	necked six_lines20	quadrangle*	arc_0.5_90, line_0.354, line_0.9, line_0.354, arc_0.5_90, line_0.354, line_0.65, line_0.25	L0--L0--R135--R135--L0--L0--R135--R90
+necked_six_lines21	necked six_lines21	quadrangle*	arc_0.5_90, line_0.354, line_0.9, line_0.354, arc_0.5_90, line_0.354, line_0.9, line_0.354	L0--L0--R135--R135--L0--L0--R135--R135
+necked_eight_lines1	necked eight_lines1	octagon*	arc_0.5_120, line_0.385, line_0.4, line_0.385, line_0.5, line_0.5, line_0.385, line_0.4, line_0.385	L0--L90--R60--R60--L120--L60--L120--R60--R60
+necked_eight_lines2	necked eight_lines2	octagon*	arc_0.5_120, line_0.385, line_0.2, line_0.385, line_0.5, line_0.5, line_0.385, line_0.2, line_0.385	L0--L90--R60--R60--L120--L60--L120--R60--R60
+necked_eight_lines3	necked eight_lines3	octagon*	arc_0.5_120, line_0.269, line_0.4, line_0.269, line_0.5, line_0.5, line_0.269, line_0.4, line_0.269	L0--L90--R60--R60--L120--L60--L120--R60--R60
+necked_eight_lines4	necked eight_lines4	octagon*	arc_0.5_120, line_0.269, line_0.2, line_0.269, line_0.5, line_0.5, line_0.269, line_0.2, line_0.269	L0--L90--R60--R60--L120--L60--L120--R60--R60
+necked_eight_lines5	necked eight_lines5	octagon*	arc_0.5_120, line_0.385, line_0.4, line_0.385, line_0.5, line_1.0, line_0.385, line_0.4, line_0.385	L0--L90--R60--R60--L60--L120--L120--R60--R60
+necked_eight_lines6	necked eight_lines6	octagon*	arc_0.5_120, line_0.385, line_0.2, line_0.385, line_0.5, line_1.0, line_0.385, line_0.2, line_0.385	L0--L90--R60--R60--L60--L120--L120--R60--R60
+necked_eight_lines7	necked eight_lines7	octagon*	arc_0.5_120, line_0.269, line_0.4, line_0.269, line_0.5, line_1.0, line_0.269, line_0.4, line_0.269	L0--L90--R60--R60--L60--L120--L120--R60--R60
+necked_eight_lines8	necked eight_lines8	octagon*	arc_0.5_120, line_0.269, line_0.2, line_0.269, line_0.5, line_1.0, line_0.269, line_0.2, line_0.269	L0--L90--R60--R60--L60--L120--L120--R60--R60
+necked_eight_lines9	necked eight_lines9	octagon*	arc_0.5_90, line_0.217, line_0.4, line_0.3, line_0.577, line_0.577, line_0.3, line_0.4, line_0.217	L0--L90--R45--R90--L150--L60--L150--R90--R45
+necked_eight_lines10	necked eight_lines10	octagon*	arc_0.5_90, line_0.217, line_0.2, line_0.3, line_0.577, line_0.577, line_0.3, line_0.2, line_0.217	L0--L90--R45--R90--L150--L60--L150--R90--R45
+necked_eight_lines11	necked eight_lines11	octagon*	arc_0.5_90, line_0.359, line_0.4, line_0.4, line_0.577, line_0.577, line_0.4, line_0.4, line_0.359	L0--L90--R45--R90--L150--L60--L150--R90--R45
+necked_eight_lines12	necked eight_lines12	octagon*	arc_0.5_90, line_0.359, line_0.2, line_0.4, line_0.577, line_0.577, line_0.4, line_0.2, line_0.359	L0--L90--R45--R90--L150--L60--L150--R90--R45
+thin_seven_lines1	thin seven_lines1	heptagon*	line_1.0, line_0.25, line_0.25, line_0.15, line_0.3, line_0.335	L0--L143.13--L73.74--R126.87--L90--L26.565
+thin_seven_lines2	thin seven_lines2	heptagon*	line_1.0, line_0.15, line_0.427, line_0.15, line_0.3, line_0.335	L0--L90--L110.556--R110.556--L90--L26.565
+thin_seven_lines3	thin seven_lines3	heptagon*	line_1.0, line_0.427, line_0.15, line_0.292, line_0.35, line_0.15	L0--L159.444--L110.556--R120.946--L30.946--L90
+thin_seven_lines4	thin seven_lines4	heptagon*	line_1.0, line_0.15, line_0.427, line_0.212, line_0.5, line_0.292	L0--L90--L110.556--R155.556--L135--L30.946
+thin_seven_lines5	thin seven_lines5	heptagon*	line_0.85, line_0.212, line_0.57, line_0.212, line_0.6, line_0.15	L0--L45--L150.255--R150.255--L135--L90
+thin_seven_lines6	thin seven_lines6	heptagon*	line_0.85, line_0.212, line_0.57, line_0.212, line_0.2, line_0.427	L0--L45--L150.255--R150.255--L135--L20.556
+exist_triangle_eight_lines1	exist_triangle eight_lines1	octagon*	line_0.361, line_0.361, line_0.4, line_0.4, line_0.4, line_0.64, line_0.8, line_0.64	L0--L112.62--L33.69--L90--L90--R128.66--L128.66--L128.66
+exist_triangle_eight_lines2	exist_triangle eight_lines2	octagon*	line_0.181, line_0.181, line_0.2, line_0.2, line_0.2, line_0.64, line_0.8, line_0.64	L0--L112.62--L33.69--L90--L90--R128.66--L128.66--L128.66
+exist_triangle_eight_lines3	exist_triangle eight_lines3	octagon*	line_0.361, line_0.361, line_0.4, line_0.4, line_0.4, line_0.256, line_0.32, line_0.256	L0--L112.62--L33.69--L90--L90--R128.66--L128.66--L128.66
+exist_triangle_eight_lines4	exist_triangle eight_lines4	octagon*	line_0.283, line_0.283, line_0.4, line_0.4, line_0.4, line_0.6, line_0.447, line_0.566	L0--R90--L135--L90--L90--R90--L116.565--L108.435
+exist_triangle_eight_lines5	exist_triangle eight_lines5	octagon*	line_0.283, line_0.283, line_0.4, line_0.4, line_0.4, line_0.6, line_0.447, line_0.566	L0--R90--L135--L90--L90--R45--L116.565--L108.435
+exist_triangle_eight_lines6	exist_triangle eight_lines6	octagon*	line_0.283, line_0.283, line_0.4, line_0.4, line_0.4, line_0.6, line_0.447, line_0.566	L0--R90--L135--L90--L90--R135--L116.565--L108.435
+exist_triangle_eight_lines7	exist_triangle eight_lines7	octagon*	line_0.283, line_0.283, line_0.4, line_0.4, line_0.4, line_0.24, line_0.179, line_0.226	L0--R90--L135--L90--L90--R90--L116.565--L108.435
+exist_triangle_eight_lines8	exist_triangle eight_lines8	octagon*	line_0.283, line_0.283, line_0.4, line_0.4, line_0.4, line_0.24, line_0.179, line_0.226	L0--R90--L135--L90--L90--R45--L116.565--L108.435
+exist_triangle_eight_lines9	exist_triangle eight_lines9	octagon*	line_0.283, line_0.283, line_0.4, line_0.4, line_0.4, line_0.24, line_0.179, line_0.226	L0--R90--L135--L90--L90--R135--L116.565--L108.435
+exist_triangle_eight_lines10	exist_triangle eight_lines10	octagon*	line_0.142, line_0.142, line_0.2, line_0.2, line_0.2, line_0.6, line_0.447, line_0.566	L0--R90--L135--L90--L90--R90--L116.565--L108.435
+exist_triangle_eight_lines11	exist_triangle eight_lines11	octagon*	line_0.142, line_0.142, line_0.2, line_0.2, line_0.2, line_0.6, line_0.447, line_0.566	L0--R90--L135--L90--L90--R45--L116.565--L108.435
+exist_triangle_eight_lines12	exist_triangle eight_lines12	octagon*	line_0.142, line_0.142, line_0.2, line_0.2, line_0.2, line_0.6, line_0.447, line_0.566	L0--R90--L135--L90--L90--R135--L116.565--L108.435
+thin_exist_triangle1	thin exist_triangle1	heptagon*	line_1.0, line_0.15, line_0.335, line_0.25, line_0.25, line_0.335, line_0.15	L0--L90--L116.565--R63.435--L73.74--R63.435--L116.565
+thin_exist_triangle2	thin exist_triangle2	heptagon*	line_1.0, line_0.335, line_0.15, line_0.25, line_0.25, line_0.335, line_0.15	L0--L153.435--L116.565--R126.87--L73.74--R63.435--L116.565
+thin_exist_triangle3	thin exist_triangle3	heptagon*	line_1.0, line_0.335, line_0.15, line_0.25, line_0.25, line_0.15, line_0.335	L0--L153.435--L116.565--R126.87--L73.74--R126.87--L116.565
+thin_exist_triangle4	thin exist_triangle4	heptagon*	line_1.0, line_0.212, line_0.212, line_0.25, line_0.25, line_0.212, line_0.212	L0--L135--L90--R81.87--L73.74--R81.87--L90
+no_two_parts_sector1	no_two_parts sector1	sector	line_0.5, arc_0.5_58, line_0.5	L0--L90--L90
+no_two_parts_sector2	no_two_parts sector2	sector	line_0.5, arc_0.5_78, line_0.5	L0--L90--L90
+no_two_parts_sector3	no_two_parts sector3	sector	line_0.5, arc_0.5_108, line_0.5	L0--L90--L90
+no_two_parts_sector4	no_two_parts sector4	sector	line_0.5, arc_0.5_218, line_0.5	L0--L90--L90
+no_two_parts_sector5	no_two_parts sector5	sector	line_0.5, arc_0.5_248, line_0.5	L0--L90--L90
+no_two_parts_sector6	no_two_parts sector6	sector	line_0.5, arc_0.5_309, line_0.5	L0--L90--L90
+no_two_parts_sector7	no_two_parts sector7	octagon*	line_0.5, arc_0.5_120, line_0.5, line_0.4, line_0.4, line_0.566, line_0.566, line_0.4, line_0.4	L0--L90--L90--R150--L90--L135--R90--L135--L90
+no_two_parts_sector8	no_two_parts sector8	octagon*	line_0.5, arc_0.5_60, line_0.5, line_0.4, line_0.4, line_0.566, line_0.566, line_0.4, line_0.4	L0--L90--L90--R120--L90--L135--R90--L135--L90
+no_two_parts_sector9	no_two_parts sector9	octagon*	line_0.5, arc_0.5_60, line_0.5, line_0.4, line_0.4, line_0.566, line_0.566, line_0.4, line_0.4	L0--L90--L90--R90--L90--L135--R90--L135--L90
+symm_trans_exist_quad1	symm_trans exist_quad1	hexagon*	line_0.51, line_0.283, line_0.51, line_0.51, line_0.283, line_0.51	L0--L56.31--R56.31--R157.38--R56.31--L56.31
+symm_trans_exist_quad2	symm_trans exist_quad2	hexagon*	line_0.539, line_0.447, line_0.539, line_0.539, line_0.447, line_0.539	L0--L85.236--R85.236--R136.397--R85.236--L85.236
+symm_trans_exist_quad3	symm_trans exist_quad3	hexagon*	line_0.583, line_0.632, line_0.583, line_0.583, line_0.632, line_0.583	L0--L102.529--R102.529--R118.072--R102.529--L102.529
+symm_trans_exist_quad4	symm_trans exist_quad4	hexagon*	line_0.64, line_0.854, line_0.64, line_0.64, line_0.854, line_0.64	L0--L108.104--R108.104--R102.68--R108.104--L108.104
+rectangle_new1	rectangle new1	quadrangle	line_1.0, line_0.8, line_1.0, line_0.8	L0--L90.0--L90.0--L90.0
+rectangle_new2	rectangle new2	quadrangle	line_1.0, line_0.4, line_1.0, line_0.4	L0--L90.0--L90.0--L90.0
