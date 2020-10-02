@@ -235,3 +235,11 @@ To use the Bongard library without display, please add `xvfb-run` at the beginni
 ```bash
 xvfb-run python [script_name.py]
 ```
+
+### Got error "ModuleNotFoundError: No module named 'tkinter'"?
+
+If the user is not using the Docker container we provided, it is likely that there might be some missing dependencies. For this particular dependency, please install it via `apt` on Ubuntu.
+
+```bash
+[sudo] sudo apt install python3-tk
+```
