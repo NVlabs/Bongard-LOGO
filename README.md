@@ -6,7 +6,7 @@
 
 ## The `Bongard-LOGO` Dataset
 
-The `Bongard-LOGO` dataset contains 12,000 Bongard problems solely based on the `shape concept`, by considering as nuisances shape positions, orientations and sizes, etc. It is divided into three types of problems: 3,600 `Feeform Shape Problem`s, 4,000 `Basic Shape Problem`s and 4,400 `Abstract Shape Problem`s.
+The `Bongard-LOGO` dataset contains 12,000 Bongard problems solely based on the `shape concept`, by considering as nuisances shape positions, orientations and sizes, etc. It is divided into three types of problems: 3,600 `Freeform Shape Problem`s, 4,000 `Basic Shape Problem`s and 4,400 `Abstract Shape Problem`s.
 
 Furthermore, each image is paired with an action program, with which we can recover the shape(s) in the image, by using the provided rendering method.
 
@@ -14,7 +14,7 @@ Below are examples of each type of `Bongard-LOGO` problems.
 
 Freeform Shape Problem          |  Basic Shape Problem            |  Abstract Shape Problem
 :-------------------------:|:-------------------------:  |:-------------------------:
-![Freeform](examples/02-bongard_logo/demo/ff/ff_nact2_5_0107.png)  | ![Basic](examples/02-bongard_logo/demo/bd/bd_inverse_asymmetric_house-square_dagger2_0000.png) | ![Abstract](examples/02-bongard_logo/demo/hd/hd_symmetric-unbalanced_two_0014.png)
+![Freeform](examples/02-bongard_logo/demo/ff/ff_nact6_0292.png)  | ![Basic](examples/02-bongard_logo/demo/bd/bd_isosceles_trapezoid-no_obtuse_angle_six_lines2_0000.png) | ![Abstract](examples/02-bongard_logo/demo/hd/hd_convex_0004.png)
 
 The `Bongard-LOGO` dataset could be directly downloaded from [Google Drive](https://drive.google.com/file/d/1-1j7EBriRpxI-xIVqE6UEXt-SzoWvwLx/view?usp=sharing).
 
@@ -28,13 +28,13 @@ For more details of how to generate the `Bongard-LOGO` dataset, please refer to 
 
 It is strongly recommended to use Docker container. The Docker container has the `bongard` library installed and the user does not have to install it manually.
 
-To build the Docker image, please run the following command in the terimanl.
+To build the Docker image, please run the following command in the terminal.
 
 ```bash
 docker build -f docker/bongard.Dockerfile --tag=bongard:0.0.1 .
 ```
 
-To run the Docker container, please run the following command in the terimanl.
+To run the Docker container, please run the following command in the terminal.
 
 ```bash
 docker run -it --rm bongard:0.0.1
@@ -42,7 +42,7 @@ docker run -it --rm bongard:0.0.1
 
 #### Installation From Source
 
-To install the `bongard` library from the latest source code, please run the following command in the terimanl.
+To install the `bongard` library from the latest source code, please run the following command in the terminal.
 
 ```bash
 git clone https://github.com/NVlabs/Bongard-LOGO.git
@@ -52,7 +52,7 @@ pip install .
 
 #### Installation From PyPI
 
-To install the `bongard` library from the published packages on [PyPI](https://pypi.org/), please run the following command in the terimanl.
+To install the `bongard` library from the published packages on [PyPI](https://pypi.org/), please run the following command in the terminal.
 
 ```bash
 pip install bongard
