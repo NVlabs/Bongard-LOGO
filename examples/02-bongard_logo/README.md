@@ -17,7 +17,7 @@ These are the Python scripts used for generating the Bongard-Logo dataset. The B
 
 #### Abstract
 
-![Abstract](demo/hd/hd_symmetric-unbalanced_two_0014.png)
+![Abstract](demo/hd/hd_convex_0004.png)
 
 ### Usages
 
