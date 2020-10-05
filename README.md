@@ -14,7 +14,7 @@ Below are examples of each type of `Bongard-LOGO` problems.
 
 Freeform Shape Problem          |  Basic Shape Problem            |  Abstract Shape Problem
 :-------------------------:|:-------------------------:  |:-------------------------:
-![Freeform](examples/02-bongard_logo/demo/ff/ff_nact2_5_0107.png)  | ![Basic](02-bongard_logo/demo/bd/bd_inverse_asymmetric_house-square_dagger2_0000.png) | ![Abstract](examples/02-bongard_logo/demo/hd/hd_symmetric-unbalanced_two_0014.png)
+![Freeform](examples/02-bongard_logo/demo/ff/ff_nact2_5_0107.png)  | ![Basic](examples/02-bongard_logo/demo/bd/bd_inverse_asymmetric_house-square_dagger2_0000.png) | ![Abstract](examples/02-bongard_logo/demo/hd/hd_symmetric-unbalanced_two_0014.png)
 
 The `Bongard-LOGO` dataset could be directly downloaded from [Google Drive](https://drive.google.com/file/d/1-1j7EBriRpxI-xIVqE6UEXt-SzoWvwLx/view?usp=sharing).
 
