@@ -8,16 +8,16 @@ These are the Python scripts used for generating the Bongard-Logo dataset. The B
 
 #### Freeform
 
-![Freeform](demo/ff/ff_nact2_5_0107.png)
+![Freeform](demo/ff/ff_nact6_0292.png)
 
 
 #### Basic
 
-![Basic](demo/bd/bd_inverse_asymmetric_house-square_dagger2_0000.png)
+![Basic](demo/bd/bd_isosceles_trapezoid-no_obtuse_angle_six_lines2_0000.png)
 
 #### Abstract
 
-![Abstract](demo/hd/hd_symmetric-unbalanced_two_0014.png)
+![Abstract](demo/hd/hd_convex_0004.png)
 
 ### Usages
 
@@ -44,6 +44,4 @@ The action programs for each type of the problems are saved as `ff_action_progra
 
 
 ### References
-
-
 
