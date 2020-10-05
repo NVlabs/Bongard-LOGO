@@ -10,7 +10,7 @@ with open("README.md", "r") as fhand:
 
 setuptools.setup(
     name="bongard",
-    version="0.0.1",
+    version="0.0.2",
     author="Lei Mao, Weili Nie",
     author_email="lmao@nvidia.com, wnie@nvidia.com",
     description="Bongard problem generation using Python turtle graphics.",
@@ -24,4 +24,11 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.5',
+    install_requires=[
+        "numpy>=1.18.3",
+        "pillow>=7.1.2",
+        "matplotlib>=3.2.1",
+        "tqdm>=4.46.0",
+        "pandas==1.0.5",
+    ],
 )
