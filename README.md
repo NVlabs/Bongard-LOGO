@@ -243,3 +243,14 @@ If the user is not using the Docker container we provided, it is likely that the
 ```bash
 [sudo] sudo apt install python3-tk
 ```
+
+## Reference
+To cite this work, please use
+```
+@INPROCEEDINGS{Nie2020Bongard,
+  author = {Nie, Weili and Yu, Zhiding and Mao, Lei and Patel, Ankit B and Zhu, Yuke and Anandkumar, Animashree},
+  title = {Bongard-LOGO: A New Benchmark for Human-Level Concept Learning and Reasoning},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = {2020}
+}
+```
