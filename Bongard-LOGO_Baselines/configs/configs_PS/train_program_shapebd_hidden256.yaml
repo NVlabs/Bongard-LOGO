@@ -1,0 +1,45 @@
+train_dataset: shape-program
+train_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: train
+
+val_dataset: shape-program
+val_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: val
+
+ft_dataset: shape-bongard-v2
+ft_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: train
+
+fv_dataset: shape-bongard-v2
+fv_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: val
+
+eval_fs_epoch: 1
+
+model: program-decoder
+model_args:
+    encoder: resnet12
+    encoder_args: {out_dim: 128}
+    use_mixture_density: true
+    hidden_dim: 256
+    continuous: true
+    discretized_num: 10
+    components_size: 5
+    n_layers: 2
+    base_type_coef: 1.0
+
+batch_size: 128
+max_epoch: 100
+optimizer: sgd
+optimizer_args: {lr: 0.03, weight_decay: 1.e-4, milestones: [20, 40, 60]}
+
+save_epoch: 10
+visualize_datasets: false

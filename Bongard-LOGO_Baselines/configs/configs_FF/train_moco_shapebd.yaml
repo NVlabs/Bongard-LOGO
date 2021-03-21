@@ -1,0 +1,43 @@
+train_dataset: shape-bongard-ff
+train_dataset_args:
+    root_path: ./materials/ShapeBongard_V2_FF
+    split_file: ./materials/ShapeBongard_V2_FF/ShapeBongard_FF_split.json
+    split: train
+    augment: true
+    moco: true
+    aug_plus: false
+
+val_dataset: shape-bongard-ff
+val_dataset_args:
+    root_path: ./materials/ShapeBongard_V2_FF
+    split_file: ./materials/ShapeBongard_V2_FF/ShapeBongard_FF_split.json
+    split: val
+    moco: true
+    aug_plus: false
+
+tval_dataset: shape-bongard-ff
+tval_dataset_args:
+    root_path: ./materials/ShapeBongard_V2_FF
+    split_file: ./materials/ShapeBongard_V2_FF/ShapeBongard_FF_split.json
+    split: test
+    moco: true
+    aug_plus: false
+
+
+eval_fs: true
+ep_per_batch: 8
+eval_fs_epoch: 1
+
+model: moco
+model_args:
+    encoder: resnet12
+    encoder_args: {out_dim: 128}
+    mlp: false
+
+batch_size: 128
+max_epoch: 100
+optimizer: sgd
+optimizer_args: {lr: 0.001, weight_decay: 5.e-4}
+
+save_epoch: 10
+visualize_datasets: true

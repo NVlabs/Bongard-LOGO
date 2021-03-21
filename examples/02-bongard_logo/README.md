@@ -3,7 +3,7 @@
 
 ### Introduction
 
-These are the Python scripts used for generating the Bongard-Logo dataset. The Bongard-Logo dataset consists of three types of Bongard problems, freeform, basic, and abstract. For more details about the design and instructions on these three types of Bongard problems, please read the Bongard-Logo dataset documentation.
+These are the Python scripts used for generating the Bongard-LOGO dataset. The Bongard-Logo dataset consists of three types of Bongard problems, freeform, basic, and abstract. For more details about the design and instructions on these three types of Bongard problems, please read the Bongard-Logo dataset documentation.
 
 
 #### Freeform

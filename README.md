@@ -1,5 +1,8 @@
 # Bongard-LOGO
 
+## [Update on 03/20/2021]: The code for training Bongard LOGO baselines was released [here](Bongard-LOGO_Baselines).
+
+
 ## Introduction
 
 `Bongard-LOGO` is a Python code repository with the purpose of generating synthetic [Bongard problems](https://en.wikipedia.org/wiki/Bongard_problem) on a large scale with little human intervention. It mainly consists of a `Bongard-LOGO` dataset that has 12,000 synthetic Bongard problems, and a `bongard` Python library that is used for the synthesis of the Bongard problems. The user could use the `Bongard-LOGO` dataset for concept learning and symbolic learning, or use the `bongard` library for custom Bongard problem synthesis.

@@ -1,0 +1,66 @@
+train_dataset: shape-bongard-v2
+train_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: train
+    moco: true
+    aug_plus: false
+
+val_dataset: shape-bongard-v2
+val_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: val
+    moco: true
+    aug_plus: false
+
+tval_ff_dataset: shape-bongard-v2
+tval_ff_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: test_ff
+    moco: true
+    aug_plus: false
+
+tval_bd_dataset: shape-bongard-v2
+tval_bd_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: test_bd
+    moco: true
+    aug_plus: false
+
+tval_hd_comb_dataset: shape-bongard-v2
+tval_hd_comb_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: test_hd_comb
+    moco: true
+    aug_plus: false
+
+tval_hd_novel_dataset: shape-bongard-v2
+tval_hd_novel_dataset_args:
+    root_path: ./materials/ShapeBongard_V2
+    split_file: ./materials/ShapeBongard_V2/ShapeBongard_V2_split.json
+    split: test_hd_novel
+    moco: true
+    aug_plus: false
+
+
+eval_fs: true
+ep_per_batch: 8
+eval_fs_epoch: 1
+
+model: moco
+model_args:
+    encoder: resnet12
+    encoder_args: {out_dim: 128}
+    mlp: false
+
+batch_size: 128
+max_epoch: 100
+optimizer: sgd
+optimizer_args: {lr: 0.03, weight_decay: 1.e-4, milestones: [20, 40, 60]}
+
+save_epoch: 10
+visualize_datasets: true
