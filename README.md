@@ -83,14 +83,14 @@ Similarly, `ArcAction` is moving following an arc with optionally some features 
 from bongard import LineAction, ArcAction
 # Create an instance of LineAction
 # line_length: a float number between 0 and 1.0.
-# line_type: a string indicating the type of lines. Currently, the BongardPainter supported "normal", "zigzag", "square", "arrow", "circle", "square", "triangle", and "classic".
+# line_type: a string indicating the type of lines. Currently, the BongardPainter supported "normal", "zigzag", "square", "arrow", "circle", "triangle", and "classic".
 # turn_direction: a string indicating turning left or right after moving. It has to be "L" or "R". "L" for left and "R" for right.
 # turn_angle: a float number between 0 and 180.0.
 line_action = LineAction(line_length=0.5, line_type="normal", turn_direction="R", turn_angle=90)
 # Create an instance of ArcAction
 # arc_angle: a float number between -360 and 360.
 # arc_radius: a float number between 0 and 1.0.
-# arc_type: a string indicating the type of lines. Currently, the BongardPainter have supported "normal", "zigzag", "square", "arrow", "circle", "square", "triangle", and "classic".
+# arc_type: a string indicating the type of lines. Currently, the BongardPainter have supported "normal", "zigzag", "square", "arrow", "circle", "triangle", and "classic".
 # turn_direction: a string indicating turning left or right after moving. It has to be "L" or "R". "L" for left and "R" for right.
 # turn_angle: a float number between 0 and 180.0.
 arc_action = ArcAction(arc_angle=90, arc_type=n"zigzag", turn_direction="R", turn_angle=0, arc_radius=0.5)
