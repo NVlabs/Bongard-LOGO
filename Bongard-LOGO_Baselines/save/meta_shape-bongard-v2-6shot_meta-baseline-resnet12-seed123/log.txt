@@ -1,0 +1,49 @@
+train dataset: torch.Size([1, 512, 512]) (x130200)
+tval_ff dataset: torch.Size([1, 512, 512]) (x8400)
+tval_bd dataset: torch.Size([1, 512, 512]) (x6720)
+tval_hd_comb dataset: torch.Size([1, 512, 512]) (x5600)
+tval_hd_novel dataset: torch.Size([1, 512, 512]) (x4480)
+val dataset: torch.Size([1, 512, 512]) (x12600)
+num params: 2.1K
+train dataset: torch.Size([1, 512, 512]) (x130200)
+tval_ff dataset: torch.Size([1, 512, 512]) (x8400)
+tval_bd dataset: torch.Size([1, 512, 512]) (x6720)
+tval_hd_comb dataset: torch.Size([1, 512, 512]) (x5600)
+tval_hd_novel dataset: torch.Size([1, 512, 512]) (x4480)
+val dataset: torch.Size([1, 512, 512]) (x12600)
+num params: 2.1K
+train dataset: torch.Size([1, 512, 512]) (x130200)
+tval_ff dataset: torch.Size([1, 512, 512]) (x8400)
+tval_bd dataset: torch.Size([1, 512, 512]) (x6720)
+tval_hd_comb dataset: torch.Size([1, 512, 512]) (x5600)
+tval_hd_novel dataset: torch.Size([1, 512, 512]) (x4480)
+val dataset: torch.Size([1, 512, 512]) (x12600)
+num params: 2.1K
+train dataset: torch.Size([1, 512, 512]) (x130200)
+tval_ff dataset: torch.Size([1, 512, 512]) (x8400)
+tval_bd dataset: torch.Size([1, 512, 512]) (x6720)
+tval_hd_comb dataset: torch.Size([1, 512, 512]) (x5600)
+tval_hd_novel dataset: torch.Size([1, 512, 512]) (x4480)
+val dataset: torch.Size([1, 512, 512]) (x12600)
+num params: 2.1K
+epoch 1, train 0.7212|0.5016, val 0.6944|0.5017, tval_ff 0.6945|0.5068, tval_bd 0.6948|0.5073, tval_hd_comb 0.6941|0.5025, tval_hd_novel 0.6942|0.4719, 16.9m 16.9m/28.2h
+epoch 2, train 0.6946|0.5041, val 0.6941|0.5134, tval_ff 0.6942|0.5127, tval_bd 0.6944|0.4969, tval_hd_comb 0.6939|0.4800, tval_hd_novel 0.6939|0.5141, 16.9m 33.8m/28.1h
+epoch 3, train 0.6942|0.5016, val 0.6937|0.5000, tval_ff 0.6937|0.5000, tval_bd 0.6938|0.5000, tval_hd_comb 0.6935|0.5000, tval_hd_novel 0.6936|0.5000, 16.9m 50.6m/28.1h
+epoch 4, train 0.6936|0.5002, val 0.6933|0.5000, tval_ff 0.6933|0.5000, tval_bd 0.6934|0.5000, tval_hd_comb 0.6933|0.5000, tval_hd_novel 0.6933|0.5000, 16.9m 1.1h/28.1h
+train dataset: torch.Size([1, 512, 512]) (x130200)
+tval_ff dataset: torch.Size([1, 512, 512]) (x8400)
+tval_bd dataset: torch.Size([1, 512, 512]) (x6720)
+tval_hd_comb dataset: torch.Size([1, 512, 512]) (x5600)
+tval_hd_novel dataset: torch.Size([1, 512, 512]) (x4480)
+val dataset: torch.Size([1, 512, 512]) (x12600)
+num params: 2.1K
+epoch 1, train 0.7347|0.5025, val 0.6950|0.5117, tval_ff 0.6954|0.5110, tval_bd 0.6955|0.4865, tval_hd_comb 0.6945|0.5200, tval_hd_novel 0.6946|0.4922, 16.9m 16.9m/28.2h
+epoch 2, train 0.6947|0.4983, val 0.6939|0.5184, tval_ff 0.6941|0.4831, tval_bd 0.6941|0.5063, tval_hd_comb 0.6937|0.5225, tval_hd_novel 0.6937|0.5172, 16.8m 33.8m/28.1h
+epoch 3, train 0.6937|0.5036, val 0.6934|0.5000, tval_ff 0.6935|0.4975, tval_bd 0.6935|0.5073, tval_hd_comb 0.6933|0.4963, tval_hd_novel 0.6933|0.5000, 16.9m 50.6m/28.1h
+epoch 4, train 0.6933|0.5022, val 0.6932|0.4939, tval_ff 0.6933|0.4949, tval_bd 0.6933|0.5010, tval_hd_comb 0.6932|0.4963, tval_hd_novel 0.6932|0.5328, 16.9m 1.1h/28.1h
+epoch 5, train 0.6933|0.5030, val 0.6932|0.4838, tval_ff 0.6932|0.4958, tval_bd 0.6932|0.5302, tval_hd_comb 0.6932|0.4913, tval_hd_novel 0.6932|0.4906, 16.9m 1.4h/28.1h
+epoch 6, train 0.6933|0.5043, val 0.6932|0.4894, tval_ff 0.6932|0.5220, tval_bd 0.6932|0.5177, tval_hd_comb 0.6932|0.4550, tval_hd_novel 0.6932|0.4891, 16.9m 1.7h/28.1h
+epoch 7, train 0.6932|0.5019, val 0.6931|0.4983, tval_ff 0.6931|0.4907, tval_bd 0.6931|0.4917, tval_hd_comb 0.6931|0.5100, tval_hd_novel 0.6931|0.4828, 16.9m 2.0h/28.1h
+epoch 8, train 0.6933|0.5000, val 0.6932|0.4955, tval_ff 0.6932|0.4932, tval_bd 0.6932|0.4958, tval_hd_comb 0.6932|0.5013, tval_hd_novel 0.6932|0.4891, 16.9m 2.3h/28.1h
+epoch 9, train 0.6932|0.5029, val 0.6932|0.4916, tval_ff 0.6932|0.5093, tval_bd 0.6932|0.5010, tval_hd_comb 0.6932|0.5038, tval_hd_novel 0.6932|0.5031, 16.9m 2.5h/28.1h
+epoch 10, train 0.6932|0.5009, val 0.6932|0.5128, tval_ff 0.6932|0.5034, tval_bd 0.6932|0.4823, tval_hd_comb 0.6932|0.5225, tval_hd_novel 0.6931|0.5312, 16.9m 2.8h/28.1h

@@ -14,7 +14,9 @@ class BasicSampler(BongardProblemSampler):
 
     def __init__(self, shape_actions_filepath, shape_attributes_filepath,
                  num_positive_examples=7, num_negative_examples=7,
-                 random_state=np.random.RandomState(123)):
+                 random_state=np.random.RandomState(123), 
+                 line_types=["normal", "zigzag", "circle", "square", "triangle"], 
+                 arc_types=["normal", "zigzag", "circle", "square", "triangle"]):
         super().__init__(num_positive_examples, num_negative_examples)
 
         self.random_state = random_state
@@ -22,8 +24,8 @@ class BasicSampler(BongardProblemSampler):
         self.name = 'bd'
         self.zf_num = 4
 
-        self.line_types = ["normal", "zigzag", "circle", "square", "triangle"]
-        self.arc_types = ["normal", "zigzag", "circle", "square", "triangle"]
+        self.line_types = line_types
+        self.arc_types = arc_types
 
         self.shape_actions_dict = get_human_designed_shape_annotations(shape_actions_filepath)
         self.shape_sup_class_dict = get_shape_super_classes(shape_actions_filepath)

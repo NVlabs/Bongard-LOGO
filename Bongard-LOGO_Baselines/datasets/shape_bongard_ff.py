@@ -21,7 +21,7 @@ from .datasets import register
 @register('shape-bongard-ff')
 class ShapeBongard_FF(Dataset):
 
-    def __init__(self, root_path, image_size=512, box_size=512, **kwargs):
+    def __init__(self, root_path, image_size=32, box_size=32, **kwargs):
         self.bong_size = 7
         if box_size is None:
             box_size = image_size

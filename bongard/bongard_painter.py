@@ -96,15 +96,21 @@ class BongardShapePainter(object):
         """
         Return: Boolean value
         """
+
+        list_actions = []
+
         self.reset_accumulated_ranges(x_range_accumulated=[shape_start_coordinates[0], shape_start_coordinates[0]],
                                       y_range_accumulated=[shape_start_coordinates[1], shape_start_coordinates[1]])
 
         self.set_turtle_locations(x=shape_start_coordinates[0], y=shape_start_coordinates[1],
                                   theta=shape_start_orientation)
 
+        sc = (shape_start_coordinates[0], shape_start_coordinates[1])
+        sa = shape_start_orientation
+        a = ("start", sc, sa)
+        list_actions.append(a)
         # print(len(shape_actions))
         for action, action_scaling_factor in zip(shape_actions, shape_action_scaling_factors):
-
             if action.turn_direction == "L":
                 self.wn.left(action.turn_angle)
             elif action.turn_direction == "R":
@@ -112,19 +118,27 @@ class BongardShapePainter(object):
             else:
                 print(action.turn_direction)
                 raise Exception("Unsupported direction type!")
-
+            
             if isinstance(action, LineAction):
                 is_valid = self.draw_line(length=action.line_length * action_scaling_factor,
                                           line_type=action.line_type, scaling_factor=action_scaling_factor)
                 if not is_valid:
-                    return False
+                    return False, list_actions
+                pos = self.wn.pos()
+                a = ("line", action.line_type, sc, pos, action.turn_angle, action.line_length, action_scaling_factor)
+                sc = pos
+
             elif isinstance(action, ArcAction):
                 is_valid = self.draw_arc(angle=action.arc_angle, radius=action.arc_radius * action_scaling_factor,
                                          arc_type=action.arc_type, scaling_factor=action_scaling_factor)
                 if not is_valid:
-                    return False
-
-        return True
+                    return False, list_actions
+                pos = self.wn.pos()
+                a = ("arc", action.arc_type, sc, sa, action.turn_angle, action.arc_angle, action.arc_radius, action_scaling_factor)
+                sc = pos
+            
+            list_actions.append(a)
+        return (True, list_actions)
 
     def draw_line(self, length, line_type, scaling_factor=None):
 
@@ -370,24 +384,24 @@ class BongardImagePainter(object):
         # Iterate over shapes
         for shape_actions, shape_action_scaling_factors, shape_start_coordinates, shape_start_orientation in zip(
                 actions, action_scaling_factors, start_coordinates, start_orientations):
-            is_valid = self.shapePainter.draw(shape_actions, shape_action_scaling_factors,
-                                              shape_start_coordinates, shape_start_orientation)
+            is_valid, line_actions = self.shapePainter.draw(shape_actions, shape_action_scaling_factors,
+                                                            shape_start_coordinates, shape_start_orientation)
 
             if not is_valid:
-                return False
+                return False, [0]
 
-        return True
+        return True, line_actions
 
     def draw_bongard_image(self, bongard_image):
 
         assert isinstance(bongard_image, BongardImage), "bongard_image is not an instance of BongardImage!"
 
-        is_valid = self.draw(actions=bongard_image.get_actions(),
-                             action_scaling_factors=bongard_image.get_scaling_factors(),
-                             start_coordinates=bongard_image.get_start_coordinates(),
-                             start_orientations=bongard_image.get_start_orientations())
+        is_valid, list_actions = self.draw(actions=bongard_image.get_actions(),
+                                           action_scaling_factors=bongard_image.get_scaling_factors(),
+                                           start_coordinates=bongard_image.get_start_coordinates(),
+                                           start_orientations=bongard_image.get_start_orientations())
 
-        return is_valid
+        return is_valid, list_actions
 
 
 class BongardProblemPainter(object):
@@ -464,7 +478,7 @@ class BongardProblemPainter(object):
 
         return False
 
-    def save_bongard_images(self, bongard_images, image_label, bongard_problem_ps_dir, bongard_problem_png_dir,
+    def save_bongard_images(self, bongard_images, image_label, bongard_problem_ps_dir, bongard_problem_png_dir, bongard_problem_txt_dir,
                             auto_position=True):
 
         for i, bongard_image in enumerate(bongard_images):
@@ -487,7 +501,7 @@ class BongardProblemPainter(object):
                         for
                         _ in range(num_shapes)]
                     bongard_image.set_consistent_scaling_factors(scaling_factors=scaling_factors)
-                    is_valid = self.bongard_image_painter.draw_bongard_image(bongard_image=bongard_image)
+                    is_valid, list_actions = self.bongard_image_painter.draw_bongard_image(bongard_image=bongard_image)
                     self.screen.update()
                     paint_trials += 1
 
@@ -501,8 +515,20 @@ class BongardProblemPainter(object):
                     raise Exception("Insufficient position and size information to plot Bongard problem!")
                 else:
                     # We ignore the validness since the user determines the positions
-                    self.bongard_image_painter.draw_bongard_image(bongard_image=bongard_image)
+                    is_valid, list_actions = self.bongard_image_painter.draw_bongard_image(bongard_image=bongard_image)
                     self.screen.update()
+
+            # Save the list actions
+            txt_filename = "{}.txt".format(i)
+            txt_dir = os.path.join(bongard_problem_txt_dir, image_label)
+            if not os.path.exists(txt_dir):
+                os.makedirs(txt_dir)
+
+            txt_filepath = os.path.join(txt_dir, txt_filename)
+            with open(txt_filepath, 'w') as f:
+                for action in list_actions:
+                    f.write("{}\n".format(action))
+
 
             # Save image
             ps_filename = "{}.ps".format(i)
@@ -520,7 +546,7 @@ class BongardProblemPainter(object):
 
             self.wn.clear()
 
-    def create_bongard_problem(self, bongard_problem, bongard_problem_ps_dir, bongard_problem_png_dir,
+    def create_bongard_problem(self, bongard_problem, bongard_problem_ps_dir, bongard_problem_png_dir, bongard_problem_txt_dir,
                                auto_position=True):
 
         assert isinstance(bongard_problem, BongardProblem), "bongard_problem is not an instance of BongardProblem!"
@@ -533,7 +559,11 @@ class BongardProblemPainter(object):
 
         self.save_bongard_images(bongard_images=positive_bongard_images, image_label=positive_label,
                                  bongard_problem_ps_dir=bongard_problem_ps_dir,
-                                 bongard_problem_png_dir=bongard_problem_png_dir, auto_position=auto_position)
+                                 bongard_problem_png_dir=bongard_problem_png_dir, 
+                                 bongard_problem_txt_dir=bongard_problem_txt_dir,
+                                 auto_position=auto_position)
         self.save_bongard_images(bongard_images=negative_bongard_images, image_label=negative_label,
                                  bongard_problem_ps_dir=bongard_problem_ps_dir,
-                                 bongard_problem_png_dir=bongard_problem_png_dir, auto_position=auto_position)
+                                 bongard_problem_png_dir=bongard_problem_png_dir,
+                                 bongard_problem_txt_dir=bongard_problem_txt_dir,
+                                 auto_position=auto_position)

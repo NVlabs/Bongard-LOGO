@@ -13,7 +13,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
 from torch.utils.data import DataLoader
-from tensorboardX import SummaryWriter
+# from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 import datasets
 import models
@@ -191,8 +192,9 @@ def main(config):
             if config['model'] == 'maml':  # need grad in maml
                 model.zero_grad()
 
-            logits = model(x_shot, x_query).view(-1, n_train_way)
-            loss = F.cross_entropy(logits, label_query)
+            logits, loss = model(x_shot, x_query)
+            logits = logits.view(-1, n_train_way)
+            loss += F.cross_entropy(logits, label_query)
             acc = utils.compute_acc(logits, label_query)
 
             optimizer.zero_grad()
@@ -233,8 +235,9 @@ def main(config):
                     acc = utils.compute_acc(logits, label_query)
                 else:
                     with torch.no_grad():
-                        logits = model(x_shot, x_query, eval=True).view(-1, n_way)
-                        loss = F.cross_entropy(logits, label_query)
+                        logits, loss = model(x_shot, x_query, eval=True)
+                        logits = logits.view(-1, n_way)
+                        loss += F.cross_entropy(logits, label_query)
                         acc = utils.compute_acc(logits, label_query)
 
                 aves[name_l].add(loss.item())

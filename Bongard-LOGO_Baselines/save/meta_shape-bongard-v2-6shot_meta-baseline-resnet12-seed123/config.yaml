@@ -1,0 +1,59 @@
+ep_per_batch: 16
+max_epoch: 100
+model: meta-baseline
+model_args:
+  encoder: resnet12
+  encoder_args:
+    out_dim: 128
+n_query: 1
+n_shot: 6
+n_way: 2
+optimizer: adam
+optimizer_args:
+  lr: 0.001
+  weight_decay: 0
+train_batches: 1125
+train_dataset: shape-bongard-v2
+train_dataset_args:
+  augment: true
+  box_size: 512
+  image_size: 512
+  root_path: /home/t-shahhet/ShapeBongard_V2
+  split: train
+  split_file: /home/t-shahhet/ShapeBongard_V2/ShapeBongard_V2_split.json
+tval_bd_dataset: shape-bongard-v2
+tval_bd_dataset_args:
+  box_size: 512
+  image_size: 512
+  root_path: /home/t-shahhet/ShapeBongard_V2
+  split: test_bd
+  split_file: /home/t-shahhet/ShapeBongard_V2/ShapeBongard_V2_split.json
+tval_ff_dataset: shape-bongard-v2
+tval_ff_dataset_args:
+  box_size: 512
+  image_size: 512
+  root_path: /home/t-shahhet/ShapeBongard_V2
+  split: test_ff
+  split_file: /home/t-shahhet/ShapeBongard_V2/ShapeBongard_V2_split.json
+tval_hd_comb_dataset: shape-bongard-v2
+tval_hd_comb_dataset_args:
+  box_size: 512
+  image_size: 512
+  root_path: /home/t-shahhet/ShapeBongard_V2
+  split: test_hd_comb
+  split_file: /home/t-shahhet/ShapeBongard_V2/ShapeBongard_V2_split.json
+tval_hd_novel_dataset: shape-bongard-v2
+tval_hd_novel_dataset_args:
+  box_size: 512
+  image_size: 512
+  root_path: /home/t-shahhet/ShapeBongard_V2
+  split: test_hd_novel
+  split_file: /home/t-shahhet/ShapeBongard_V2/ShapeBongard_V2_split.json
+val_dataset: shape-bongard-v2
+val_dataset_args:
+  box_size: 512
+  image_size: 512
+  root_path: /home/t-shahhet/ShapeBongard_V2
+  split: val
+  split_file: /home/t-shahhet/ShapeBongard_V2/ShapeBongard_V2_split.json
+visualize_datasets: true

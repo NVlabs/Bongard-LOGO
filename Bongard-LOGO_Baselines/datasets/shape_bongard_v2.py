@@ -88,14 +88,14 @@ class ShapeBongard_V2(Dataset):
                 self.transform = transforms.Compose([
                     # transforms.RandomResizedCrop(image_size),
                     transforms.Resize(image_size),
-                    transforms.RandomHorizontalFlip(),
+                    # transforms.RandomHorizontalFlip(),
                     transforms.ToTensor(),
                     normalize,
                 ])
             else:
                 self.transform = transforms.Compose([
                     transforms.Resize(box_size),
-                    transforms.CenterCrop(image_size),
+                    # transforms.CenterCrop(image_size),
                     transforms.ToTensor(),
                     normalize,
                 ])
